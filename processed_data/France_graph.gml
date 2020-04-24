@@ -3,6 +3,10 @@ graph [
     id 0
     label "12"
     name "Aveyron"
+    coords [
+      lat 44.3513062
+      lng 2.5727883
+    ]
     capital "Rodez"
     population 278360
   ]
@@ -10,6 +14,10 @@ graph [
     id 1
     label "46"
     name "Lot"
+    coords [
+      lat 44.4495
+      lng 1.4364999
+    ]
     capital "Cahors"
     population 173166
   ]
@@ -17,6 +25,10 @@ graph [
     id 2
     label "24"
     name "Dordogne"
+    coords [
+      lat 45.1909365
+      lng 0.7184407
+    ]
     capital "P&#233;rigueux"
     population 408393
   ]
@@ -24,6 +36,10 @@ graph [
     id 3
     label "33"
     name "Gironde"
+    coords [
+      lat 44.841225
+      lng -0.5800364
+    ]
     capital "Bordeaux"
     population 1633440
   ]
@@ -31,6 +47,10 @@ graph [
     id 4
     label "40"
     name "Landes"
+    coords [
+      lat 43.8911318
+      lng -0.500972
+    ]
     capital "Mont-de-Marsan"
     population 411979
   ]
@@ -38,6 +58,10 @@ graph [
     id 5
     label "64"
     name "Pyr&#233;n&#233;es Atlantiques"
+    coords [
+      lat 43.2957547
+      lng -0.3685668
+    ]
     capital "Pau"
     population 683169
   ]
@@ -45,6 +69,10 @@ graph [
     id 6
     label "65"
     name "Hautes Pyr&#233;n&#233;es"
+    coords [
+      lat 43.232858
+      lng 0.0781021
+    ]
     capital "Tarbes"
     population 226839
   ]
@@ -52,6 +80,10 @@ graph [
     id 7
     label "31"
     name "Haute Garonne"
+    coords [
+      lat 43.6044622
+      lng 1.4442469
+    ]
     capital "Toulouse"
     population 1400935
   ]
@@ -59,6 +91,10 @@ graph [
     id 8
     label "09"
     name "Ari&#232;ge"
+    coords [
+      lat 42.9638998
+      lng 1.6053807
+    ]
     capital "Foix"
     population 152398
   ]
@@ -66,6 +102,10 @@ graph [
     id 9
     label "81"
     name "Tarn"
+    coords [
+      lat 43.9277552
+      lng 2.147899
+    ]
     capital "Albi"
     population 387898
   ]
@@ -73,6 +113,10 @@ graph [
     id 10
     label "82"
     name "Tarn-et-Garonne"
+    coords [
+      lat 44.0175835
+      lng 1.3549991
+    ]
     capital "Montauban"
     population 262618
   ]
@@ -80,6 +124,10 @@ graph [
     id 11
     label "47"
     name "Lot-et-Garonne"
+    coords [
+      lat 44.2015624
+      lng 0.6176324
+    ]
     capital "Agen"
     population 330336
   ]
@@ -87,6 +135,10 @@ graph [
     id 12
     label "32"
     name "Gers"
+    coords [
+      lat 43.6463558
+      lng 0.5850507
+    ]
     capital "Auch"
     population 190040
   ]
@@ -94,6 +146,10 @@ graph [
     id 13
     label "87"
     name "Haute Vienne"
+    coords [
+      lat 45.8354243
+      lng 1.2644847
+    ]
     capital "Limoges"
     population 370774
   ]
@@ -101,6 +157,10 @@ graph [
     id 14
     label "23"
     name "Creuse"
+    coords [
+      lat 46.1686865
+      lng 1.8713349
+    ]
     capital "Gu&#233;ret"
     population 116270
   ]
@@ -108,6 +168,10 @@ graph [
     id 15
     label "19"
     name "Corr&#232;ze"
+    coords [
+      lat 45.2678158
+      lng 1.7706904
+    ]
     capital "Tulle"
     population 240336
   ]
@@ -115,6 +179,10 @@ graph [
     id 16
     label "03"
     name "Allier"
+    coords [
+      lat 46.5660526
+      lng 3.3331703
+    ]
     capital "Moulins"
     population 331315
   ]
@@ -122,6 +190,10 @@ graph [
     id 17
     label "63"
     name "Puy-de-D&#244;me"
+    coords [
+      lat 45.7774551
+      lng 3.0819427
+    ]
     capital "Clermont-Ferrand"
     population 660240
   ]
@@ -129,6 +201,10 @@ graph [
     id 18
     label "15"
     name "Cantal"
+    coords [
+      lat 44.9285441
+      lng 2.4433101
+    ]
     capital "Aurillac"
     population 142811
   ]
@@ -136,6 +212,10 @@ graph [
     id 19
     label "43"
     name "Haute Loire"
+    coords [
+      lat 45.2950482
+      lng 3.2407312
+    ]
     capital "Le Puy"
     population 226901
   ]
@@ -143,6 +223,10 @@ graph [
     id 20
     label "42"
     name "Loire"
+    coords [
+      lat 45.4401467
+      lng 4.3873058
+    ]
     capital "St-&#201;tienne"
     population 764737
   ]
@@ -150,6 +234,10 @@ graph [
     id 21
     label "69"
     name "Rh&#244;ne"
+    coords [
+      lat 45.7578137
+      lng 4.8320114
+    ]
     capital "Lyon"
     population 1876051
   ]
@@ -157,6 +245,10 @@ graph [
     id 22
     label "07"
     name "Ard&#232;che"
+    coords [
+      lat 44.7352708
+      lng 4.5986733
+    ]
     capital "Privas"
     population 326875
   ]
@@ -164,6 +256,10 @@ graph [
     id 23
     label "26"
     name "Dr&#244;me"
+    coords [
+      lat 44.9332277
+      lng 4.8920811
+    ]
     capital "Valence"
     population 520560
   ]
@@ -171,6 +267,10 @@ graph [
     id 24
     label "38"
     name "Is&#232;re"
+    coords [
+      lat 45.1875602
+      lng 5.7357819
+    ]
     capital "Grenoble"
     population 1264979
   ]
@@ -178,6 +278,10 @@ graph [
     id 25
     label "73"
     name "Savoie"
+    coords [
+      lat 45.5662672
+      lng 5.9203636
+    ]
     capital "Chamb&#233;ry"
     population 432548
   ]
@@ -185,6 +289,10 @@ graph [
     id 26
     label "2A"
     name "Corse-du-Sud"
+    coords [
+      lat 41.9263991
+      lng 8.7376029
+    ]
     capital "Ajaccio"
     population 162421
   ]
@@ -192,6 +300,10 @@ graph [
     id 27
     label "2B"
     name "Haute Corse"
+    coords [
+      lat 42.7065505
+      lng 9.452542
+    ]
     capital "Bastia"
     population 182258
   ]
@@ -199,6 +311,10 @@ graph [
     id 28
     label "04"
     name "Alpes-de-Haute-Provence"
+    coords [
+      lat 44.0918144
+      lng 6.2351431
+    ]
     capital "Digne"
     population 165197
   ]
@@ -206,6 +322,10 @@ graph [
     id 29
     label "05"
     name "Hautes-Alpes"
+    coords [
+      lat 44.5611978
+      lng 6.0820018
+    ]
     capital "Gap"
     population 141756
   ]
@@ -213,6 +333,10 @@ graph [
     id 30
     label "06"
     name "Alpes Maritimes"
+    coords [
+      lat 43.7009358
+      lng 7.2683912
+    ]
     capital "Nice"
     population 1079396
   ]
@@ -220,6 +344,10 @@ graph [
     id 31
     label "83"
     name "Var"
+    coords [
+      lat 43.1257311
+      lng 5.9304919
+    ]
     capital "Toulon"
     population 1073836
   ]
@@ -227,6 +355,10 @@ graph [
     id 32
     label "13"
     name "Bouches-du-Rh&#244;ne"
+    coords [
+      lat 43.2961743
+      lng 5.3699525
+    ]
     capital "Marseille"
     population 2034469
   ]
@@ -234,6 +366,10 @@ graph [
     id 33
     label "84"
     name "Vaucluse"
+    coords [
+      lat 43.9492493
+      lng 4.8059012
+    ]
     capital "Avignon"
     population 560997
   ]
@@ -241,6 +377,10 @@ graph [
     id 34
     label "30"
     name "Gard"
+    coords [
+      lat 43.8374249
+      lng 4.3600687
+    ]
     capital "N&#238;mes"
     population 748468
   ]
@@ -248,6 +388,10 @@ graph [
     id 35
     label "48"
     name "Loz&#232;re"
+    coords [
+      lat 44.5180226
+      lng 3.4991057
+    ]
     capital "Mende"
     population 76286
   ]
@@ -255,6 +399,10 @@ graph [
     id 36
     label "34"
     name "H&#233;rault"
+    coords [
+      lat 43.6112422
+      lng 3.8767337
+    ]
     capital "Montpellier"
     population 1176145
   ]
@@ -262,6 +410,10 @@ graph [
     id 37
     label "11"
     name "Aude"
+    coords [
+      lat 43.2130358
+      lng 2.3491069
+    ]
     capital "Carcassonne"
     population 372705
   ]
@@ -269,6 +421,10 @@ graph [
     id 38
     label "66"
     name "Pyr&#233;n&#233;es Orientales"
+    coords [
+      lat 42.6985304
+      lng 2.8953121
+    ]
     capital "Perpignan"
     population 479000
   ]
@@ -276,6 +432,10 @@ graph [
     id 39
     label "62"
     name "Pas-de-Calais"
+    coords [
+      lat 50.291048
+      lng 2.7772211
+    ]
     capital "Arras"
     population 1452778
   ]
@@ -283,6 +443,10 @@ graph [
     id 40
     label "59"
     name "Nord"
+    coords [
+      lat 50.6365654
+      lng 3.0635282
+    ]
     capital "Lille"
     population 2588988
   ]
@@ -290,6 +454,10 @@ graph [
     id 41
     label "80"
     name "Somme"
+    coords [
+      lat 49.8941708
+      lng 2.2956951
+    ]
     capital "Amiens"
     population 569769
   ]
@@ -297,6 +465,10 @@ graph [
     id 42
     label "60"
     name "Oise"
+    coords [
+      lat 49.4300997
+      lng 2.0823355
+    ]
     capital "Beauvais"
     population 825077
   ]
@@ -304,6 +476,10 @@ graph [
     id 43
     label "02"
     name "Aisne"
+    coords [
+      lat 49.564665
+      lng 3.620686
+    ]
     capital "Laon"
     population 526050
   ]
@@ -311,6 +487,10 @@ graph [
     id 44
     label "95"
     name "Val-D'Oise"
+    coords [
+      lat 49.0508845
+      lng 2.1008067
+    ]
     capital "Pontoise"
     population 1248354
   ]
@@ -318,6 +498,10 @@ graph [
     id 45
     label "77"
     name "Seine-et-Marne"
+    coords [
+      lat 48.539927
+      lng 2.6608169
+    ]
     capital "Melun"
     population 1423607
   ]
@@ -325,6 +509,10 @@ graph [
     id 46
     label "78"
     name "Yvelines"
+    coords [
+      lat 48.8035403
+      lng 2.1266886
+    ]
     capital "Versailles"
     population 1448625
   ]
@@ -332,6 +520,10 @@ graph [
     id 47
     label "91"
     name "Essonne"
+    coords [
+      lat 48.6296099
+      lng 2.4435959
+    ]
     capital "Evry"
     population 1319401
   ]
@@ -339,6 +531,10 @@ graph [
     id 48
     label "28"
     name "Eure-et-Loir"
+    coords [
+      lat 48.4438601
+      lng 1.4881434
+    ]
     capital "Chartres"
     population 429425
   ]
@@ -346,6 +542,10 @@ graph [
     id 49
     label "45"
     name "Loiret"
+    coords [
+      lat 47.9027336
+      lng 1.9086066
+    ]
     capital "Orl&#233;ans"
     population 682890
   ]
@@ -353,6 +553,10 @@ graph [
     id 50
     label "41"
     name "Loir-et-Cher"
+    coords [
+      lat 47.5876861
+      lng 1.3337639
+    ]
     capital "Blois"
     population 327835
   ]
@@ -360,6 +564,10 @@ graph [
     id 51
     label "18"
     name "Cher"
+    coords [
+      lat 47.0805693
+      lng 2.398932
+    ]
     capital "Bourges"
     population 296404
   ]
@@ -367,6 +575,10 @@ graph [
     id 52
     label "37"
     name "Indre-et-Loire"
+    coords [
+      lat 47.3900474
+      lng 0.6889268
+    ]
     capital "Tours"
     population 605380
   ]
@@ -374,6 +586,10 @@ graph [
     id 53
     label "36"
     name "Indre"
+    coords [
+      lat 46.8047
+      lng 1.6957099
+    ]
     capital "Ch&#226;teauroux"
     population 217139
   ]
@@ -381,6 +597,10 @@ graph [
     id 54
     label "92"
     name "Hauts-de-Seine"
+    coords [
+      lat 48.8924273
+      lng 2.2071267
+    ]
     capital "Nanterre"
     population 1613762
   ]
@@ -388,6 +608,10 @@ graph [
     id 55
     label "93"
     name "Seine-St-Denis"
+    coords [
+      lat 48.906387
+      lng 2.4452231
+    ]
     capital "Bobigny"
     population 1670149
   ]
@@ -395,6 +619,10 @@ graph [
     id 56
     label "75"
     name "Paris"
+    coords [
+      lat 48.8566969
+      lng 2.3514616
+    ]
     capital "Paris"
     population 2148271
   ]
@@ -402,6 +630,10 @@ graph [
     id 57
     label "94"
     name "Val-de-Marne"
+    coords [
+      lat 48.7771486
+      lng 2.4530731
+    ]
     capital "Cr&#233;teil"
     population 1406041
   ]
@@ -409,6 +641,10 @@ graph [
     id 58
     label "08"
     name "Ardennes"
+    coords [
+      lat 49.7735712
+      lng 4.7206939
+    ]
     capital "Charleville-M&#233;zi&#232;res"
     population 265531
   ]
@@ -416,6 +652,10 @@ graph [
     id 59
     label "51"
     name "Marne"
+    coords [
+      lat 48.9566218
+      lng 4.3628851
+    ]
     capital "Ch&#226;lons-sur-Marne"
     population 563823
   ]
@@ -423,6 +663,10 @@ graph [
     id 60
     label "10"
     name "Aube"
+    coords [
+      lat 48.2971626
+      lng 4.0746257
+    ]
     capital "Troyes"
     population 309907
   ]
@@ -430,6 +674,10 @@ graph [
     id 61
     label "52"
     name "Haute Marne"
+    coords [
+      lat 48.1111324
+      lng 5.1395849
+    ]
     capital "Chaumont"
     population 169250
   ]
@@ -437,6 +685,10 @@ graph [
     id 62
     label "55"
     name "Meuse"
+    coords [
+      lat 48.7712673
+      lng 5.1623805
+    ]
     capital "Bar-le-Duc"
     population 181641
   ]
@@ -444,6 +696,10 @@ graph [
     id 63
     label "54"
     name "Meurthe-et-Moselle"
+    coords [
+      lat 48.6937223
+      lng 6.1834097
+    ]
     capital "Nancy"
     population 730398
   ]
@@ -451,6 +707,10 @@ graph [
     id 64
     label "57"
     name "Moselle"
+    coords [
+      lat 49.1196964
+      lng 6.1763552
+    ]
     capital "Metz"
     population 1035866
   ]
@@ -458,6 +718,10 @@ graph [
     id 65
     label "88"
     name "Vosges"
+    coords [
+      lat 48.1747684
+      lng 6.4503643
+    ]
     capital "&#201;pinal"
     population 359520
   ]
@@ -465,6 +729,10 @@ graph [
     id 66
     label "67"
     name "Bas-Rhin"
+    coords [
+      lat 48.584614
+      lng 7.7507127
+    ]
     capital "Strasbourg"
     population 1132607
   ]
@@ -472,6 +740,10 @@ graph [
     id 67
     label "68"
     name "Haut-Rhin"
+    coords [
+      lat 48.0777517
+      lng 7.3579641
+    ]
     capital "Colmar"
     population 763204
   ]
@@ -479,6 +751,10 @@ graph [
     id 68
     label "89"
     name "Yonne"
+    coords [
+      lat 47.7961287
+      lng 3.570579
+    ]
     capital "Auxerre"
     population 332096
   ]
@@ -486,6 +762,10 @@ graph [
     id 69
     label "21"
     name "C&#244;te-d'Or"
+    coords [
+      lat 47.3215806
+      lng 5.0414701
+    ]
     capital "Dijon"
     population 532886
   ]
@@ -493,6 +773,10 @@ graph [
     id 70
     label "58"
     name "Ni&#232;vre"
+    coords [
+      lat 46.9876601
+      lng 3.1577203
+    ]
     capital "Nevers"
     population 199596
   ]
@@ -500,6 +784,10 @@ graph [
     id 71
     label "71"
     name "Sa&#244;ne-et-Loire"
+    coords [
+      lat 46.3036683
+      lng 4.8322266
+    ]
     capital "M&#226;con"
     population 547824
   ]
@@ -507,6 +795,10 @@ graph [
     id 72
     label "70"
     name "Haute Sa&#244;ne"
+    coords [
+      lat 47.6197395
+      lng 6.1544694
+    ]
     capital "Vesoul"
     population 233194
   ]
@@ -514,6 +806,10 @@ graph [
     id 73
     label "90"
     name "Territoire de Belfort"
+    coords [
+      lat 47.6379599
+      lng 6.8628942
+    ]
     capital "Belfort"
     population 140145
   ]
@@ -521,6 +817,10 @@ graph [
     id 74
     label "25"
     name "Doubs"
+    coords [
+      lat 47.2380222
+      lng 6.0243622
+    ]
     capital "Besan&#231;on"
     population 539449
   ]
@@ -528,6 +828,10 @@ graph [
     id 75
     label "39"
     name "Jura"
+    coords [
+      lat 46.6739021
+      lng 5.5586167
+    ]
     capital "Lons-le-Saunier"
     population 257849
   ]
@@ -535,6 +839,10 @@ graph [
     id 76
     label "29"
     name "Finist&#232;re"
+    coords [
+      lat 47.9960325
+      lng -4.1024782
+    ]
     capital "Quimper"
     population 906554
   ]
@@ -542,6 +850,10 @@ graph [
     id 77
     label "22"
     name "C&#244;tes d'Armor"
+    coords [
+      lat 48.5141594
+      lng -2.7602707
+    ]
     capital "St-Brieuc"
     population 596186
   ]
@@ -549,6 +861,10 @@ graph [
     id 78
     label "56"
     name "Morbihan"
+    coords [
+      lat 47.6586772
+      lng -2.7599079
+    ]
     capital "Vannes"
     population 755566
   ]
@@ -556,6 +872,10 @@ graph [
     id 79
     label "35"
     name "Ille-et-Vilaine"
+    coords [
+      lat 48.1113387
+      lng -1.6800198
+    ]
     capital "Rennes"
     population 1082073
   ]
@@ -563,6 +883,10 @@ graph [
     id 80
     label "44"
     name "Loire Atlantique"
+    coords [
+      lat 47.2186371
+      lng -1.5541362
+    ]
     capital "Nantes"
     population 1437137
   ]
@@ -570,6 +894,10 @@ graph [
     id 81
     label "85"
     name "Vend&#233;e"
+    coords [
+      lat 46.6705431
+      lng -1.4269698
+    ]
     capital "La Roche-sur-Yon"
     population 683187
   ]
@@ -577,6 +905,10 @@ graph [
     id 82
     label "53"
     name "Mayenne"
+    coords [
+      lat 48.0710377
+      lng -0.7723499
+    ]
     capital "Laval"
     population 305365
   ]
@@ -584,6 +916,10 @@ graph [
     id 83
     label "49"
     name "Maine-et-Loire"
+    coords [
+      lat 47.4739884
+      lng -0.5515588
+    ]
     capital "Angers"
     population 815881
   ]
@@ -591,6 +927,10 @@ graph [
     id 84
     label "72"
     name "Sarthe"
+    coords [
+      lat 48.0073498
+      lng 0.1967379
+    ]
     capital "Le Mans"
     population 560227
   ]
@@ -598,6 +938,10 @@ graph [
     id 85
     label "79"
     name "Deux-S&#232;vres"
+    coords [
+      lat 46.3239455
+      lng -0.4645212
+    ]
     capital "Niort"
     population 372627
   ]
@@ -605,6 +949,10 @@ graph [
     id 86
     label "17"
     name "Charente-Maritime"
+    coords [
+      lat 46.1591126
+      lng -1.1520434
+    ]
     capital "La Rochelle"
     population 647080
   ]
@@ -612,6 +960,10 @@ graph [
     id 87
     label "16"
     name "Charente"
+    coords [
+      lat 45.6512748
+      lng 0.1576745
+    ]
     capital "Angoul&#234;me"
     population 348180
   ]
@@ -619,6 +971,10 @@ graph [
     id 88
     label "86"
     name "Vienne"
+    coords [
+      lat 46.5802596
+      lng 0.340196
+    ]
     capital "Poitiers"
     population 437398
   ]
@@ -626,6 +982,10 @@ graph [
     id 89
     label "50"
     name "Manche"
+    coords [
+      lat 49.1157004
+      lng -1.0906637
+    ]
     capital "St-L&#244;"
     population 490669
   ]
@@ -633,6 +993,10 @@ graph [
     id 90
     label "14"
     name "Calvados"
+    coords [
+      lat 49.1828008
+      lng -0.3690815
+    ]
     capital "Caen"
     population 691453
   ]
@@ -640,6 +1004,10 @@ graph [
     id 91
     label "61"
     name "Orne"
+    coords [
+      lat 48.4312059
+      lng 0.0911374
+    ]
     capital "Alen&#231;on"
     population 276903
   ]
@@ -647,6 +1015,10 @@ graph [
     id 92
     label "27"
     name "Eure"
+    coords [
+      lat 49.0268903
+      lng 1.1510164
+    ]
     capital "Evreux"
     population 600687
   ]
@@ -654,6 +1026,10 @@ graph [
     id 93
     label "76"
     name "Seine Maritime"
+    coords [
+      lat 49.4404591
+      lng 1.0939658
+    ]
     capital "Rouen"
     population 1243788
   ]
@@ -661,6 +1037,10 @@ graph [
     id 94
     label "01"
     name "Ain"
+    coords [
+      lat 46.2051192
+      lng 5.2250324
+    ]
     capital "Bourg-en-Bresse"
     population 656955
   ]
@@ -668,6 +1048,10 @@ graph [
     id 95
     label "74"
     name "Haute Savoie"
+    coords [
+      lat 45.8992348
+      lng 6.1288847
+    ]
     capital "Annecy"
     population 828405
   ]
