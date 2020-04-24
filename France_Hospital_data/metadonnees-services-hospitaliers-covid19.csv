@@ -1,0 +1,7 @@
+﻿Colonne;Type ;Description_FR;Description_EN;Exemple
+dep;integer;Département;Department;1
+jour;string($date);Date de notification ;Date of notice;18/03/2020
+nb;integer;Nombre cumulé de services hospitaliers ayant déclaré au moins un cas;Total amount of hospital services reporting at least one case;1
+;;;;
+;;;;
+;;;;
