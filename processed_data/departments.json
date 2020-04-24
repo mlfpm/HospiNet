@@ -1,0 +1,406 @@
+{
+    "01": {
+        "capital": "Bourg-en-Bresse",
+        "name": "Ain"
+    },
+    "02": {
+        "capital": "Laon",
+        "name": "Aisne"
+    },
+    "03": {
+        "capital": "Moulins",
+        "name": "Allier"
+    },
+    "04": {
+        "capital": "Digne",
+        "name": "Alpes-de-Haute-Provence"
+    },
+    "05": {
+        "capital": "Gap",
+        "name": "Hautes-Alpes"
+    },
+    "06": {
+        "capital": "Nice",
+        "name": "Alpes Maritimes"
+    },
+    "07": {
+        "capital": "Privas",
+        "name": "Ard\u00e8che"
+    },
+    "08": {
+        "capital": "Charleville-M\u00e9zi\u00e8res",
+        "name": "Ardennes"
+    },
+    "09": {
+        "capital": "Foix",
+        "name": "Ari\u00e8ge"
+    },
+    "10": {
+        "capital": "Troyes",
+        "name": "Aube"
+    },
+    "11": {
+        "capital": "Carcassonne",
+        "name": "Aude"
+    },
+    "12": {
+        "capital": "Rodez",
+        "name": "Aveyron"
+    },
+    "13": {
+        "capital": "Marseille",
+        "name": "Bouches-du-Rh\u00f4ne"
+    },
+    "14": {
+        "capital": "Caen",
+        "name": "Calvados"
+    },
+    "15": {
+        "capital": "Aurillac",
+        "name": "Cantal"
+    },
+    "16": {
+        "capital": "Angoul\u00eame",
+        "name": "Charente"
+    },
+    "17": {
+        "capital": "La Rochelle",
+        "name": "Charente-Maritime"
+    },
+    "18": {
+        "capital": "Bourges",
+        "name": "Cher"
+    },
+    "19": {
+        "capital": "Tulle",
+        "name": "Corr\u00e8ze"
+    },
+    "21": {
+        "capital": "Dijon",
+        "name": "C\u00f4te-d'Or"
+    },
+    "22": {
+        "capital": "St-Brieuc",
+        "name": "C\u00f4tes d'Armor"
+    },
+    "23": {
+        "capital": "Gu\u00e9ret",
+        "name": "Creuse"
+    },
+    "24": {
+        "capital": "P\u00e9rigueux",
+        "name": "Dordogne"
+    },
+    "25": {
+        "capital": "Besan\u00e7on",
+        "name": "Doubs"
+    },
+    "26": {
+        "capital": "Valence",
+        "name": "Dr\u00f4me"
+    },
+    "27": {
+        "capital": "Evreux",
+        "name": "Eure"
+    },
+    "28": {
+        "capital": "Chartres",
+        "name": "Eure-et-Loir"
+    },
+    "29": {
+        "capital": "Quimper",
+        "name": "Finist\u00e8re"
+    },
+    "2A": {
+        "capital": "Ajaccio",
+        "name": "Corse-du-Sud"
+    },
+    "2B": {
+        "capital": "Bastia",
+        "name": "Haute Corse"
+    },
+    "30": {
+        "capital": "N\u00eemes",
+        "name": "Gard"
+    },
+    "31": {
+        "capital": "Toulouse",
+        "name": "Haute Garonne"
+    },
+    "32": {
+        "capital": "Auch",
+        "name": "Gers"
+    },
+    "33": {
+        "capital": "Bordeaux",
+        "name": "Gironde"
+    },
+    "34": {
+        "capital": "Montpellier",
+        "name": "H\u00e9rault"
+    },
+    "35": {
+        "capital": "Rennes",
+        "name": "Ille-et-Vilaine"
+    },
+    "36": {
+        "capital": "Ch\u00e2teauroux",
+        "name": "Indre"
+    },
+    "37": {
+        "capital": "Tours",
+        "name": "Indre-et-Loire"
+    },
+    "38": {
+        "capital": "Grenoble",
+        "name": "Is\u00e8re"
+    },
+    "39": {
+        "capital": "Lons-le-Saunier",
+        "name": "Jura"
+    },
+    "40": {
+        "capital": "Mont-de-Marsan",
+        "name": "Landes"
+    },
+    "41": {
+        "capital": "Blois",
+        "name": "Loir-et-Cher"
+    },
+    "42": {
+        "capital": "St-\u00c9tienne",
+        "name": "Loire"
+    },
+    "43": {
+        "capital": "Le Puy",
+        "name": "Haute Loire"
+    },
+    "44": {
+        "capital": "Nantes",
+        "name": "Loire Atlantique"
+    },
+    "45": {
+        "capital": "Orl\u00e9ans",
+        "name": "Loiret"
+    },
+    "46": {
+        "capital": "Cahors",
+        "name": "Lot"
+    },
+    "47": {
+        "capital": "Agen",
+        "name": "Lot-et-Garonne"
+    },
+    "48": {
+        "capital": "Mende",
+        "name": "Loz\u00e8re"
+    },
+    "49": {
+        "capital": "Angers",
+        "name": "Maine-et-Loire"
+    },
+    "50": {
+        "capital": "St-L\u00f4",
+        "name": "Manche"
+    },
+    "51": {
+        "capital": "Ch\u00e2lons-sur-Marne",
+        "name": "Marne"
+    },
+    "52": {
+        "capital": "Chaumont",
+        "name": "Haute Marne"
+    },
+    "53": {
+        "capital": "Laval",
+        "name": "Mayenne"
+    },
+    "54": {
+        "capital": "Nancy",
+        "name": "Meurthe-et-Moselle"
+    },
+    "55": {
+        "capital": "Bar-le-Duc",
+        "name": "Meuse"
+    },
+    "56": {
+        "capital": "Vannes",
+        "name": "Morbihan"
+    },
+    "57": {
+        "capital": "Metz",
+        "name": "Moselle"
+    },
+    "58": {
+        "capital": "Nevers",
+        "name": "Ni\u00e8vre"
+    },
+    "59": {
+        "capital": "Lille",
+        "name": "Nord"
+    },
+    "60": {
+        "capital": "Beauvais",
+        "name": "Oise"
+    },
+    "61": {
+        "capital": "Alen\u00e7on",
+        "name": "Orne"
+    },
+    "62": {
+        "capital": "Arras",
+        "name": "Pas-de-Calais"
+    },
+    "63": {
+        "capital": "Clermont-Ferrand",
+        "name": "Puy-de-D\u00f4me"
+    },
+    "64": {
+        "capital": "Pau",
+        "name": "Pyr\u00e9n\u00e9es Atlantiques"
+    },
+    "65": {
+        "capital": "Tarbes",
+        "name": "Hautes Pyr\u00e9n\u00e9es"
+    },
+    "66": {
+        "capital": "Perpignan",
+        "name": "Pyr\u00e9n\u00e9es Orientales"
+    },
+    "67": {
+        "capital": "Strasbourg",
+        "name": "Bas-Rhin"
+    },
+    "68": {
+        "capital": "Colmar",
+        "name": "Haut-Rhin"
+    },
+    "69": {
+        "capital": "Lyon",
+        "name": "Rh\u00f4ne"
+    },
+    "70": {
+        "capital": "Vesoul",
+        "name": "Haute Sa\u00f4ne"
+    },
+    "71": {
+        "capital": "M\u00e2con",
+        "name": "Sa\u00f4ne-et-Loire"
+    },
+    "72": {
+        "capital": "Le Mans",
+        "name": "Sarthe"
+    },
+    "73": {
+        "capital": "Chamb\u00e9ry",
+        "name": "Savoie"
+    },
+    "74": {
+        "capital": "Annecy",
+        "name": "Haute Savoie"
+    },
+    "75": {
+        "capital": "Paris",
+        "name": "Paris"
+    },
+    "76": {
+        "capital": "Rouen",
+        "name": "Seine Maritime"
+    },
+    "77": {
+        "capital": "Melun",
+        "name": "Seine-et-Marne"
+    },
+    "78": {
+        "capital": "Versailles",
+        "name": "Yvelines"
+    },
+    "79": {
+        "capital": "Niort",
+        "name": "Deux-S\u00e8vres"
+    },
+    "80": {
+        "capital": "Amiens",
+        "name": "Somme"
+    },
+    "81": {
+        "capital": "Albi",
+        "name": "Tarn"
+    },
+    "82": {
+        "capital": "Montauban",
+        "name": "Tarn-et-Garonne"
+    },
+    "83": {
+        "capital": "Toulon",
+        "name": "Var"
+    },
+    "84": {
+        "capital": "Avignon",
+        "name": "Vaucluse"
+    },
+    "85": {
+        "capital": "La Roche-sur-Yon",
+        "name": "Vend\u00e9e"
+    },
+    "86": {
+        "capital": "Poitiers",
+        "name": "Vienne"
+    },
+    "87": {
+        "capital": "Limoges",
+        "name": "Haute Vienne"
+    },
+    "88": {
+        "capital": "\u00c9pinal",
+        "name": "Vosges"
+    },
+    "89": {
+        "capital": "Auxerre",
+        "name": "Yonne"
+    },
+    "90": {
+        "capital": "Belfort",
+        "name": "Territoire de Belfort"
+    },
+    "91": {
+        "capital": "Evry",
+        "name": "Essonne"
+    },
+    "92": {
+        "capital": "Nanterre",
+        "name": "Hauts-de-Seine"
+    },
+    "93": {
+        "capital": "Bobigny",
+        "name": "Seine-St-Denis"
+    },
+    "94": {
+        "capital": "Cr\u00e9teil",
+        "name": "Val-de-Marne"
+    },
+    "95": {
+        "capital": "Pontoise",
+        "name": "Val-D'Oise"
+    },
+    "971": {
+        "capital": "Basse-Terre",
+        "name": "Guadeloupe"
+    },
+    "972": {
+        "capital": "Fort-de-France",
+        "name": "Martinique"
+    },
+    "973": {
+        "capital": "Cayenne",
+        "name": "Guyane"
+    },
+    "974": {
+        "capital": "Saint-Denis",
+        "name": "La-Reunion"
+    },
+    "976": {
+        "capital": "Mamoudzou",
+        "name": "Mayotte"
+    }
+}
