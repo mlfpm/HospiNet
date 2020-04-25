@@ -1,1 +1,1214 @@
-{"01": {"name": "Ain", "capital": "Bourg-en-Bresse", "capital_coords": {"lat": 46.2051192, "lng": 5.2250324}, "population": 656955}, "02": {"name": "Aisne", "capital": "Laon", "capital_coords": {"lat": 49.564665, "lng": 3.620686}, "population": 526050}, "03": {"name": "Allier", "capital": "Moulins", "capital_coords": {"lat": 46.5660526, "lng": 3.3331703}, "population": 331315}, "04": {"name": "Alpes-de-Haute-Provence", "capital": "Digne", "capital_coords": {"lat": 44.0918144, "lng": 6.2351431}, "population": 165197}, "05": {"name": "Hautes-Alpes", "capital": "Gap", "capital_coords": {"lat": 44.5611978, "lng": 6.0820018}, "population": 141756}, "06": {"name": "Alpes Maritimes", "capital": "Nice", "capital_coords": {"lat": 43.7009358, "lng": 7.2683912}, "population": 1079396}, "07": {"name": "Ard\u00e8che", "capital": "Privas", "capital_coords": {"lat": 44.7352708, "lng": 4.5986733}, "population": 326875}, "08": {"name": "Ardennes", "capital": "Charleville-M\u00e9zi\u00e8res", "capital_coords": {"lat": 49.7735712, "lng": 4.7206939}, "population": 265531}, "09": {"name": "Ari\u00e8ge", "capital": "Foix", "capital_coords": {"lat": 42.9638998, "lng": 1.6053807}, "population": 152398}, "10": {"name": "Aube", "capital": "Troyes", "capital_coords": {"lat": 48.2971626, "lng": 4.0746257}, "population": 309907}, "11": {"name": "Aude", "capital": "Carcassonne", "capital_coords": {"lat": 43.2130358, "lng": 2.3491069}, "population": 372705}, "12": {"name": "Aveyron", "capital": "Rodez", "capital_coords": {"lat": 44.3513062, "lng": 2.5727883}, "population": 278360}, "13": {"name": "Bouches-du-Rh\u00f4ne", "capital": "Marseille", "capital_coords": {"lat": 43.2961743, "lng": 5.3699525}, "population": 2034469}, "14": {"name": "Calvados", "capital": "Caen", "capital_coords": {"lat": 49.1828008, "lng": -0.3690815}, "population": 691453}, "15": {"name": "Cantal", "capital": "Aurillac", "capital_coords": {"lat": 44.9285441, "lng": 2.4433101}, "population": 142811}, "16": {"name": "Charente", "capital": "Angoul\u00eame", "capital_coords": {"lat": 45.6512748, "lng": 0.1576745}, "population": 348180}, "17": {"name": "Charente-Maritime", "capital": "La Rochelle", "capital_coords": {"lat": 46.1591126, "lng": -1.1520434}, "population": 647080}, "18": {"name": "Cher", "capital": "Bourges", "capital_coords": {"lat": 47.0805693, "lng": 2.398932}, "population": 296404}, "19": {"name": "Corr\u00e8ze", "capital": "Tulle", "capital_coords": {"lat": 45.2678158, "lng": 1.7706904}, "population": 240336}, "2A": {"name": "Corse-du-Sud", "capital": "Ajaccio", "capital_coords": {"lat": 41.9263991, "lng": 8.7376029}, "population": 162421}, "2B": {"name": "Haute Corse", "capital": "Bastia", "capital_coords": {"lat": 42.7065505, "lng": 9.452542}, "population": 182258}, "21": {"name": "C\u00f4te-d'Or", "capital": "Dijon", "capital_coords": {"lat": 47.3215806, "lng": 5.0414701}, "population": 532886}, "22": {"name": "C\u00f4tes d'Armor", "capital": "St-Brieuc", "capital_coords": {"lat": 48.5141594, "lng": -2.7602707}, "population": 596186}, "23": {"name": "Creuse", "capital": "Gu\u00e9ret", "capital_coords": {"lat": 46.1686865, "lng": 1.8713349}, "population": 116270}, "24": {"name": "Dordogne", "capital": "P\u00e9rigueux", "capital_coords": {"lat": 45.1909365, "lng": 0.7184407}, "population": 408393}, "25": {"name": "Doubs", "capital": "Besan\u00e7on", "capital_coords": {"lat": 47.2380222, "lng": 6.0243622}, "population": 539449}, "26": {"name": "Dr\u00f4me", "capital": "Valence", "capital_coords": {"lat": 44.9332277, "lng": 4.8920811}, "population": 520560}, "27": {"name": "Eure", "capital": "Evreux", "capital_coords": {"lat": 49.0268903, "lng": 1.1510164}, "population": 600687}, "28": {"name": "Eure-et-Loir", "capital": "Chartres", "capital_coords": {"lat": 48.4438601, "lng": 1.4881434}, "population": 429425}, "29": {"name": "Finist\u00e8re", "capital": "Quimper", "capital_coords": {"lat": 47.9960325, "lng": -4.1024782}, "population": 906554}, "30": {"name": "Gard", "capital": "N\u00eemes", "capital_coords": {"lat": 43.8374249, "lng": 4.3600687}, "population": 748468}, "31": {"name": "Haute Garonne", "capital": "Toulouse", "capital_coords": {"lat": 43.6044622, "lng": 1.4442469}, "population": 1400935}, "32": {"name": "Gers", "capital": "Auch", "capital_coords": {"lat": 43.6463558, "lng": 0.5850507}, "population": 190040}, "33": {"name": "Gironde", "capital": "Bordeaux", "capital_coords": {"lat": 44.841225, "lng": -0.5800364}, "population": 1633440}, "34": {"name": "H\u00e9rault", "capital": "Montpellier", "capital_coords": {"lat": 43.6112422, "lng": 3.8767337}, "population": 1176145}, "35": {"name": "Ille-et-Vilaine", "capital": "Rennes", "capital_coords": {"lat": 48.1113387, "lng": -1.6800198}, "population": 1082073}, "36": {"name": "Indre", "capital": "Ch\u00e2teauroux", "capital_coords": {"lat": 46.8047, "lng": 1.6957099}, "population": 217139}, "37": {"name": "Indre-et-Loire", "capital": "Tours", "capital_coords": {"lat": 47.3900474, "lng": 0.6889268}, "population": 605380}, "38": {"name": "Is\u00e8re", "capital": "Grenoble", "capital_coords": {"lat": 45.1875602, "lng": 5.7357819}, "population": 1264979}, "39": {"name": "Jura", "capital": "Lons-le-Saunier", "capital_coords": {"lat": 46.6739021, "lng": 5.5586167}, "population": 257849}, "40": {"name": "Landes", "capital": "Mont-de-Marsan", "capital_coords": {"lat": 43.8911318, "lng": -0.500972}, "population": 411979}, "41": {"name": "Loir-et-Cher", "capital": "Blois", "capital_coords": {"lat": 47.5876861, "lng": 1.3337639}, "population": 327835}, "42": {"name": "Loire", "capital": "St-\u00c9tienne", "capital_coords": {"lat": 45.4401467, "lng": 4.3873058}, "population": 764737}, "43": {"name": "Haute Loire", "capital": "Le Puy", "capital_coords": {"lat": 45.2950482, "lng": 3.2407312}, "population": 226901}, "44": {"name": "Loire Atlantique", "capital": "Nantes", "capital_coords": {"lat": 47.2186371, "lng": -1.5541362}, "population": 1437137}, "45": {"name": "Loiret", "capital": "Orl\u00e9ans", "capital_coords": {"lat": 47.9027336, "lng": 1.9086066}, "population": 682890}, "46": {"name": "Lot", "capital": "Cahors", "capital_coords": {"lat": 44.4495, "lng": 1.4364999}, "population": 173166}, "47": {"name": "Lot-et-Garonne", "capital": "Agen", "capital_coords": {"lat": 44.2015624, "lng": 0.6176324}, "population": 330336}, "48": {"name": "Loz\u00e8re", "capital": "Mende", "capital_coords": {"lat": 44.5180226, "lng": 3.4991057}, "population": 76286}, "49": {"name": "Maine-et-Loire", "capital": "Angers", "capital_coords": {"lat": 47.4739884, "lng": -0.5515588}, "population": 815881}, "50": {"name": "Manche", "capital": "St-L\u00f4", "capital_coords": {"lat": 49.1157004, "lng": -1.0906637}, "population": 490669}, "51": {"name": "Marne", "capital": "Ch\u00e2lons-sur-Marne", "capital_coords": {"lat": 48.9566218, "lng": 4.3628851}, "population": 563823}, "52": {"name": "Haute Marne", "capital": "Chaumont", "capital_coords": {"lat": 48.1111324, "lng": 5.1395849}, "population": 169250}, "53": {"name": "Mayenne", "capital": "Laval", "capital_coords": {"lat": 48.0710377, "lng": -0.7723499}, "population": 305365}, "54": {"name": "Meurthe-et-Moselle", "capital": "Nancy", "capital_coords": {"lat": 48.6937223, "lng": 6.1834097}, "population": 730398}, "55": {"name": "Meuse", "capital": "Bar-le-Duc", "capital_coords": {"lat": 48.7712673, "lng": 5.1623805}, "population": 181641}, "56": {"name": "Morbihan", "capital": "Vannes", "capital_coords": {"lat": 47.6586772, "lng": -2.7599079}, "population": 755566}, "57": {"name": "Moselle", "capital": "Metz", "capital_coords": {"lat": 49.1196964, "lng": 6.1763552}, "population": 1035866}, "58": {"name": "Ni\u00e8vre", "capital": "Nevers", "capital_coords": {"lat": 46.9876601, "lng": 3.1577203}, "population": 199596}, "59": {"name": "Nord", "capital": "Lille", "capital_coords": {"lat": 50.6365654, "lng": 3.0635282}, "population": 2588988}, "60": {"name": "Oise", "capital": "Beauvais", "capital_coords": {"lat": 49.4300997, "lng": 2.0823355}, "population": 825077}, "61": {"name": "Orne", "capital": "Alen\u00e7on", "capital_coords": {"lat": 48.4312059, "lng": 0.0911374}, "population": 276903}, "62": {"name": "Pas-de-Calais", "capital": "Arras", "capital_coords": {"lat": 50.291048, "lng": 2.7772211}, "population": 1452778}, "63": {"name": "Puy-de-D\u00f4me", "capital": "Clermont-Ferrand", "capital_coords": {"lat": 45.7774551, "lng": 3.0819427}, "population": 660240}, "64": {"name": "Pyr\u00e9n\u00e9es Atlantiques", "capital": "Pau", "capital_coords": {"lat": 43.2957547, "lng": -0.3685668}, "population": 683169}, "65": {"name": "Hautes Pyr\u00e9n\u00e9es", "capital": "Tarbes", "capital_coords": {"lat": 43.232858, "lng": 0.0781021}, "population": 226839}, "66": {"name": "Pyr\u00e9n\u00e9es Orientales", "capital": "Perpignan", "capital_coords": {"lat": 42.6985304, "lng": 2.8953121}, "population": 479000}, "67": {"name": "Bas-Rhin", "capital": "Strasbourg", "capital_coords": {"lat": 48.584614, "lng": 7.7507127}, "population": 1132607}, "68": {"name": "Haut-Rhin", "capital": "Colmar", "capital_coords": {"lat": 48.0777517, "lng": 7.3579641}, "population": 763204}, "69": {"name": "Rh\u00f4ne", "capital": "Lyon", "capital_coords": {"lat": 45.7578137, "lng": 4.8320114}, "population": 1876051}, "70": {"name": "Haute Sa\u00f4ne", "capital": "Vesoul", "capital_coords": {"lat": 47.6197395, "lng": 6.1544694}, "population": 233194}, "71": {"name": "Sa\u00f4ne-et-Loire", "capital": "M\u00e2con", "capital_coords": {"lat": 46.3036683, "lng": 4.8322266}, "population": 547824}, "72": {"name": "Sarthe", "capital": "Le Mans", "capital_coords": {"lat": 48.0073498, "lng": 0.1967379}, "population": 560227}, "73": {"name": "Savoie", "capital": "Chamb\u00e9ry", "capital_coords": {"lat": 45.5662672, "lng": 5.9203636}, "population": 432548}, "74": {"name": "Haute Savoie", "capital": "Annecy", "capital_coords": {"lat": 45.8992348, "lng": 6.1288847}, "population": 828405}, "75": {"name": "Paris", "capital": "Paris", "capital_coords": {"lat": 48.8566969, "lng": 2.3514616}, "population": 2148271}, "76": {"name": "Seine Maritime", "capital": "Rouen", "capital_coords": {"lat": 49.4404591, "lng": 1.0939658}, "population": 1243788}, "77": {"name": "Seine-et-Marne", "capital": "Melun", "capital_coords": {"lat": 48.539927, "lng": 2.6608169}, "population": 1423607}, "78": {"name": "Yvelines", "capital": "Versailles", "capital_coords": {"lat": 48.8035403, "lng": 2.1266886}, "population": 1448625}, "79": {"name": "Deux-S\u00e8vres", "capital": "Niort", "capital_coords": {"lat": 46.3239455, "lng": -0.4645212}, "population": 372627}, "80": {"name": "Somme", "capital": "Amiens", "capital_coords": {"lat": 49.8941708, "lng": 2.2956951}, "population": 569769}, "81": {"name": "Tarn", "capital": "Albi", "capital_coords": {"lat": 43.9277552, "lng": 2.147899}, "population": 387898}, "82": {"name": "Tarn-et-Garonne", "capital": "Montauban", "capital_coords": {"lat": 44.0175835, "lng": 1.3549991}, "population": 262618}, "83": {"name": "Var", "capital": "Toulon", "capital_coords": {"lat": 43.1257311, "lng": 5.9304919}, "population": 1073836}, "84": {"name": "Vaucluse", "capital": "Avignon", "capital_coords": {"lat": 43.9492493, "lng": 4.8059012}, "population": 560997}, "85": {"name": "Vend\u00e9e", "capital": "La Roche-sur-Yon", "capital_coords": {"lat": 46.6705431, "lng": -1.4269698}, "population": 683187}, "86": {"name": "Vienne", "capital": "Poitiers", "capital_coords": {"lat": 46.5802596, "lng": 0.340196}, "population": 437398}, "87": {"name": "Haute Vienne", "capital": "Limoges", "capital_coords": {"lat": 45.8354243, "lng": 1.2644847}, "population": 370774}, "88": {"name": "Vosges", "capital": "\u00c9pinal", "capital_coords": {"lat": 48.1747684, "lng": 6.4503643}, "population": 359520}, "89": {"name": "Yonne", "capital": "Auxerre", "capital_coords": {"lat": 47.7961287, "lng": 3.570579}, "population": 332096}, "90": {"name": "Territoire de Belfort", "capital": "Belfort", "capital_coords": {"lat": 47.6379599, "lng": 6.8628942}, "population": 140145}, "91": {"name": "Essonne", "capital": "Evry", "capital_coords": {"lat": 48.6296099, "lng": 2.4435959}, "population": 1319401}, "92": {"name": "Hauts-de-Seine", "capital": "Nanterre", "capital_coords": {"lat": 48.8924273, "lng": 2.2071267}, "population": 1613762}, "93": {"name": "Seine-St-Denis", "capital": "Bobigny", "capital_coords": {"lat": 48.906387, "lng": 2.4452231}, "population": 1670149}, "94": {"name": "Val-de-Marne", "capital": "Cr\u00e9teil", "capital_coords": {"lat": 48.7771486, "lng": 2.4530731}, "population": 1406041}, "95": {"name": "Val-D'Oise", "capital": "Pontoise", "capital_coords": {"lat": 49.0508845, "lng": 2.1008067}, "population": 1248354}, "971": {"name": "Guadeloupe", "capital": "Basse-Terre", "capital_coords": {"lat": 16.0000778, "lng": -61.7333373}, "population": 376879}, "972": {"name": "Martinique", "capital": "Fort-de-France", "capital_coords": {"lat": 14.6027962, "lng": -61.0676724}, "population": 358749}, "973": {"name": "Guyane", "capital": "Cayenne", "capital_coords": {"lat": 4.9371143, "lng": -52.3258307}, "population": 290691}, "974": {"name": "La-Reunion", "capital": "Saint-Denis", "capital_coords": {"lat": -20.8799889, "lng": 55.448137}, "population": 859959}, "976": {"name": "Mayotte", "capital": "Mamoudzou", "capital_coords": {"lat": -12.7805856, "lng": 45.2279908}, "population": 279471}}
+{
+    "01": {
+        "beds": {
+            "acute": 22,
+            "icu": 32
+        },
+        "capital": "Bourg-en-Bresse",
+        "capital_coords": {
+            "lat": 46.2051192,
+            "lng": 5.2250324
+        },
+        "name": "Ain"
+    },
+    "02": {
+        "beds": {
+            "acute": 32,
+            "icu": 89
+        },
+        "capital": "Laon",
+        "capital_coords": {
+            "lat": 49.564665,
+            "lng": 3.620686
+        },
+        "name": "Aisne"
+    },
+    "03": {
+        "beds": {
+            "acute": 26,
+            "icu": 52
+        },
+        "capital": "Moulins",
+        "capital_coords": {
+            "lat": 46.5660526,
+            "lng": 3.3331703
+        },
+        "name": "Allier"
+    },
+    "04": {
+        "beds": {
+            "acute": 10,
+            "icu": 6
+        },
+        "capital": "Digne",
+        "capital_coords": {
+            "lat": 44.0918144,
+            "lng": 6.2351431
+        },
+        "name": "Alpes-de-Haute-Provence"
+    },
+    "05": {
+        "beds": {
+            "acute": 23,
+            "icu": 8
+        },
+        "capital": "Gap",
+        "capital_coords": {
+            "lat": 44.5611978,
+            "lng": 6.0820018
+        },
+        "name": "Hautes-Alpes"
+    },
+    "06": {
+        "beds": {
+            "acute": 263,
+            "icu": 185
+        },
+        "capital": "Nice",
+        "capital_coords": {
+            "lat": 43.7009358,
+            "lng": 7.2683912
+        },
+        "name": "Alpes Maritimes"
+    },
+    "07": {
+        "beds": {
+            "acute": 44,
+            "icu": 8
+        },
+        "capital": "Privas",
+        "capital_coords": {
+            "lat": 44.7352708,
+            "lng": 4.5986733
+        },
+        "name": "Ard\u00e8che"
+    },
+    "08": {
+        "beds": {
+            "acute": 15,
+            "icu": 33
+        },
+        "capital": "Charleville-M\u00e9zi\u00e8res",
+        "capital_coords": {
+            "lat": 49.7735712,
+            "lng": 4.7206939
+        },
+        "name": "Ardennes"
+    },
+    "09": {
+        "beds": {
+            "acute": 6,
+            "icu": 16
+        },
+        "capital": "Foix",
+        "capital_coords": {
+            "lat": 42.9638998,
+            "lng": 1.6053807
+        },
+        "name": "Ari\u00e8ge"
+    },
+    "10": {
+        "beds": {
+            "acute": 38,
+            "icu": 30
+        },
+        "capital": "Troyes",
+        "capital_coords": {
+            "lat": 48.2971626,
+            "lng": 4.0746257
+        },
+        "name": "Aube"
+    },
+    "11": {
+        "beds": {
+            "acute": 29,
+            "icu": 38
+        },
+        "capital": "Carcassonne",
+        "capital_coords": {
+            "lat": 43.2130358,
+            "lng": 2.3491069
+        },
+        "name": "Aude"
+    },
+    "12": {
+        "beds": {
+            "acute": 19,
+            "icu": 27
+        },
+        "capital": "Rodez",
+        "capital_coords": {
+            "lat": 44.3513062,
+            "lng": 2.5727883
+        },
+        "name": "Aveyron"
+    },
+    "13": {
+        "beds": {
+            "acute": 381,
+            "icu": 547
+        },
+        "capital": "Marseille",
+        "capital_coords": {
+            "lat": 43.2961743,
+            "lng": 5.3699525
+        },
+        "name": "Bouches-du-Rh\u00f4ne"
+    },
+    "14": {
+        "beds": {
+            "acute": 106,
+            "icu": 163
+        },
+        "capital": "Caen",
+        "capital_coords": {
+            "lat": 49.1828008,
+            "lng": -0.3690815
+        },
+        "name": "Calvados"
+    },
+    "15": {
+        "beds": {
+            "acute": 21,
+            "icu": 23
+        },
+        "capital": "Aurillac",
+        "capital_coords": {
+            "lat": 44.9285441,
+            "lng": 2.4433101
+        },
+        "name": "Cantal"
+    },
+    "16": {
+        "beds": {
+            "acute": 38,
+            "icu": 30
+        },
+        "capital": "Angoul\u00eame",
+        "capital_coords": {
+            "lat": 45.6512748,
+            "lng": 0.1576745
+        },
+        "name": "Charente"
+    },
+    "17": {
+        "beds": {
+            "acute": 53,
+            "icu": 66
+        },
+        "capital": "La Rochelle",
+        "capital_coords": {
+            "lat": 46.1591126,
+            "lng": -1.1520434
+        },
+        "name": "Charente-Maritime"
+    },
+    "18": {
+        "beds": {
+            "acute": 44,
+            "icu": 28
+        },
+        "capital": "Bourges",
+        "capital_coords": {
+            "lat": 47.0805693,
+            "lng": 2.398932
+        },
+        "name": "Cher"
+    },
+    "19": {
+        "beds": {
+            "acute": 35,
+            "icu": 36
+        },
+        "capital": "Tulle",
+        "capital_coords": {
+            "lat": 45.2678158,
+            "lng": 1.7706904
+        },
+        "name": "Corr\u00e8ze"
+    },
+    "21": {
+        "beds": {
+            "acute": 96,
+            "icu": 158
+        },
+        "capital": "Dijon",
+        "capital_coords": {
+            "lat": 47.3215806,
+            "lng": 5.0414701
+        },
+        "name": "C\u00f4te-d'Or"
+    },
+    "22": {
+        "beds": {
+            "acute": 59,
+            "icu": 30
+        },
+        "capital": "St-Brieuc",
+        "capital_coords": {
+            "lat": 48.5141594,
+            "lng": -2.7602707
+        },
+        "name": "C\u00f4tes d'Armor"
+    },
+    "23": {
+        "beds": {
+            "acute": 12,
+            "icu": 16
+        },
+        "capital": "Gu\u00e9ret",
+        "capital_coords": {
+            "lat": 46.1686865,
+            "lng": 1.8713349
+        },
+        "name": "Creuse"
+    },
+    "24": {
+        "beds": {
+            "acute": 34,
+            "icu": 37
+        },
+        "capital": "P\u00e9rigueux",
+        "capital_coords": {
+            "lat": 45.1909365,
+            "lng": 0.7184407
+        },
+        "name": "Dordogne"
+    },
+    "25": {
+        "beds": {
+            "acute": 96,
+            "icu": 174
+        },
+        "capital": "Besan\u00e7on",
+        "capital_coords": {
+            "lat": 47.2380222,
+            "lng": 6.0243622
+        },
+        "name": "Doubs"
+    },
+    "26": {
+        "beds": {
+            "acute": 42,
+            "icu": 58
+        },
+        "capital": "Valence",
+        "capital_coords": {
+            "lat": 44.9332277,
+            "lng": 4.8920811
+        },
+        "name": "Dr\u00f4me"
+    },
+    "27": {
+        "beds": {
+            "acute": 14,
+            "icu": 34
+        },
+        "capital": "Evreux",
+        "capital_coords": {
+            "lat": 49.0268903,
+            "lng": 1.1510164
+        },
+        "name": "Eure"
+    },
+    "28": {
+        "beds": {
+            "acute": 42,
+            "icu": 42
+        },
+        "capital": "Chartres",
+        "capital_coords": {
+            "lat": 48.4438601,
+            "lng": 1.4881434
+        },
+        "name": "Eure-et-Loir"
+    },
+    "29": {
+        "beds": {
+            "acute": 90,
+            "icu": 140
+        },
+        "capital": "Quimper",
+        "capital_coords": {
+            "lat": 47.9960325,
+            "lng": -4.1024782
+        },
+        "name": "Finist\u00e8re"
+    },
+    "2A": {
+        "beds": {
+            "acute": 13,
+            "icu": 25
+        },
+        "capital": "Ajaccio",
+        "capital_coords": {
+            "lat": 41.9263991,
+            "lng": 8.7376029
+        },
+        "name": "Corse-du-Sud"
+    },
+    "2B": {
+        "beds": {
+            "acute": 9,
+            "icu": 14
+        },
+        "capital": "Bastia",
+        "capital_coords": {
+            "lat": 42.7065505,
+            "lng": 9.452542
+        },
+        "name": "Haute Corse"
+    },
+    "30": {
+        "beds": {
+            "acute": 80,
+            "icu": 103
+        },
+        "capital": "N\u00eemes",
+        "capital_coords": {
+            "lat": 43.8374249,
+            "lng": 4.3600687
+        },
+        "name": "Gard"
+    },
+    "31": {
+        "beds": {
+            "acute": 271,
+            "icu": 370
+        },
+        "capital": "Toulouse",
+        "capital_coords": {
+            "lat": 43.6044622,
+            "lng": 1.4442469
+        },
+        "name": "Haute Garonne"
+    },
+    "32": {
+        "beds": {
+            "acute": 8,
+            "icu": 12
+        },
+        "capital": "Auch",
+        "capital_coords": {
+            "lat": 43.6463558,
+            "lng": 0.5850507
+        },
+        "name": "Gers"
+    },
+    "33": {
+        "beds": {
+            "acute": 250,
+            "icu": 326
+        },
+        "capital": "Bordeaux",
+        "capital_coords": {
+            "lat": 44.841225,
+            "lng": -0.5800364
+        },
+        "name": "Gironde"
+    },
+    "34": {
+        "beds": {
+            "acute": 203,
+            "icu": 299
+        },
+        "capital": "Montpellier",
+        "capital_coords": {
+            "lat": 43.6112422,
+            "lng": 3.8767337
+        },
+        "name": "H\u00e9rault"
+    },
+    "35": {
+        "beds": {
+            "acute": 120,
+            "icu": 178
+        },
+        "capital": "Rennes",
+        "capital_coords": {
+            "lat": 48.1113387,
+            "lng": -1.6800198
+        },
+        "name": "Ille-et-Vilaine"
+    },
+    "36": {
+        "beds": {
+            "acute": 22,
+            "icu": 19
+        },
+        "capital": "Ch\u00e2teauroux",
+        "capital_coords": {
+            "lat": 46.8047,
+            "lng": 1.6957099
+        },
+        "name": "Indre"
+    },
+    "37": {
+        "beds": {
+            "acute": 116,
+            "icu": 144
+        },
+        "capital": "Tours",
+        "capital_coords": {
+            "lat": 47.3900474,
+            "lng": 0.6889268
+        },
+        "name": "Indre-et-Loire"
+    },
+    "38": {
+        "beds": {
+            "acute": 81,
+            "icu": 171
+        },
+        "capital": "Grenoble",
+        "capital_coords": {
+            "lat": 45.1875602,
+            "lng": 5.7357819
+        },
+        "name": "Is\u00e8re"
+    },
+    "39": {
+        "beds": {
+            "acute": 10,
+            "icu": 17
+        },
+        "capital": "Lons-le-Saunier",
+        "capital_coords": {
+            "lat": 46.6739021,
+            "lng": 5.5586167
+        },
+        "name": "Jura"
+    },
+    "40": {
+        "beds": {
+            "acute": 25,
+            "icu": 30
+        },
+        "capital": "Mont-de-Marsan",
+        "capital_coords": {
+            "lat": 43.8911318,
+            "lng": -0.500972
+        },
+        "name": "Landes"
+    },
+    "41": {
+        "beds": {
+            "acute": 35,
+            "icu": 20
+        },
+        "capital": "Blois",
+        "capital_coords": {
+            "lat": 47.5876861,
+            "lng": 1.3337639
+        },
+        "name": "Loir-et-Cher"
+    },
+    "42": {
+        "beds": {
+            "acute": 90,
+            "icu": 138
+        },
+        "capital": "St-\u00c9tienne",
+        "capital_coords": {
+            "lat": 45.4401467,
+            "lng": 4.3873058
+        },
+        "name": "Loire"
+    },
+    "43": {
+        "beds": {
+            "acute": 13,
+            "icu": 18
+        },
+        "capital": "Le Puy",
+        "capital_coords": {
+            "lat": 45.2950482,
+            "lng": 3.2407312
+        },
+        "name": "Haute Loire"
+    },
+    "44": {
+        "beds": {
+            "acute": 148,
+            "icu": 218
+        },
+        "capital": "Nantes",
+        "capital_coords": {
+            "lat": 47.2186371,
+            "lng": -1.5541362
+        },
+        "name": "Loire Atlantique"
+    },
+    "45": {
+        "beds": {
+            "acute": 134,
+            "icu": 111
+        },
+        "capital": "Orl\u00e9ans",
+        "capital_coords": {
+            "lat": 47.9027336,
+            "lng": 1.9086066
+        },
+        "name": "Loiret"
+    },
+    "46": {
+        "beds": {
+            "acute": 10,
+            "icu": 12
+        },
+        "capital": "Cahors",
+        "capital_coords": {
+            "lat": 44.4495,
+            "lng": 1.4364999
+        },
+        "name": "Lot"
+    },
+    "47": {
+        "beds": {
+            "acute": 36,
+            "icu": 29
+        },
+        "capital": "Agen",
+        "capital_coords": {
+            "lat": 44.2015624,
+            "lng": 0.6176324
+        },
+        "name": "Lot-et-Garonne"
+    },
+    "48": {
+        "beds": {
+            "acute": 3,
+            "icu": 3
+        },
+        "capital": "Mende",
+        "capital_coords": {
+            "lat": 44.5180226,
+            "lng": 3.4991057
+        },
+        "name": "Loz\u00e8re"
+    },
+    "49": {
+        "beds": {
+            "acute": 77,
+            "icu": 164
+        },
+        "capital": "Angers",
+        "capital_coords": {
+            "lat": 47.4739884,
+            "lng": -0.5515588
+        },
+        "name": "Maine-et-Loire"
+    },
+    "50": {
+        "beds": {
+            "acute": 34,
+            "icu": 54
+        },
+        "capital": "St-L\u00f4",
+        "capital_coords": {
+            "lat": 49.1157004,
+            "lng": -1.0906637
+        },
+        "name": "Manche"
+    },
+    "51": {
+        "beds": {
+            "acute": 63,
+            "icu": 99
+        },
+        "capital": "Ch\u00e2lons-sur-Marne",
+        "capital_coords": {
+            "lat": 48.9566218,
+            "lng": 4.3628851
+        },
+        "name": "Marne"
+    },
+    "52": {
+        "beds": {
+            "acute": 30,
+            "icu": 14
+        },
+        "capital": "Chaumont",
+        "capital_coords": {
+            "lat": 48.1111324,
+            "lng": 5.1395849
+        },
+        "name": "Haute Marne"
+    },
+    "53": {
+        "beds": {
+            "acute": 14,
+            "icu": 16
+        },
+        "capital": "Laval",
+        "capital_coords": {
+            "lat": 48.0710377,
+            "lng": -0.7723499
+        },
+        "name": "Mayenne"
+    },
+    "54": {
+        "beds": {
+            "acute": 173,
+            "icu": 181
+        },
+        "capital": "Nancy",
+        "capital_coords": {
+            "lat": 48.6937223,
+            "lng": 6.1834097
+        },
+        "name": "Meurthe-et-Moselle"
+    },
+    "55": {
+        "beds": {
+            "acute": 12,
+            "icu": 18
+        },
+        "capital": "Bar-le-Duc",
+        "capital_coords": {
+            "lat": 48.7712673,
+            "lng": 5.1623805
+        },
+        "name": "Meuse"
+    },
+    "56": {
+        "beds": {
+            "acute": 66,
+            "icu": 54
+        },
+        "capital": "Vannes",
+        "capital_coords": {
+            "lat": 47.6586772,
+            "lng": -2.7599079
+        },
+        "name": "Morbihan"
+    },
+    "57": {
+        "beds": {
+            "acute": 91,
+            "icu": 144
+        },
+        "capital": "Metz",
+        "capital_coords": {
+            "lat": 49.1196964,
+            "lng": 6.1763552
+        },
+        "name": "Moselle"
+    },
+    "58": {
+        "beds": {
+            "acute": 24,
+            "icu": 28
+        },
+        "capital": "Nevers",
+        "capital_coords": {
+            "lat": 46.9876601,
+            "lng": 3.1577203
+        },
+        "name": "Ni\u00e8vre"
+    },
+    "59": {
+        "beds": {
+            "acute": 355,
+            "icu": 588
+        },
+        "capital": "Lille",
+        "capital_coords": {
+            "lat": 50.6365654,
+            "lng": 3.0635282
+        },
+        "name": "Nord"
+    },
+    "60": {
+        "beds": {
+            "acute": 45,
+            "icu": 82
+        },
+        "capital": "Beauvais",
+        "capital_coords": {
+            "lat": 49.4300997,
+            "lng": 2.0823355
+        },
+        "name": "Oise"
+    },
+    "61": {
+        "beds": {
+            "acute": 21,
+            "icu": 28
+        },
+        "capital": "Alen\u00e7on",
+        "capital_coords": {
+            "lat": 48.4312059,
+            "lng": 0.0911374
+        },
+        "name": "Orne"
+    },
+    "62": {
+        "beds": {
+            "acute": 149,
+            "icu": 222
+        },
+        "capital": "Arras",
+        "capital_coords": {
+            "lat": 50.291048,
+            "lng": 2.7772211
+        },
+        "name": "Pas-de-Calais"
+    },
+    "63": {
+        "beds": {
+            "acute": 87,
+            "icu": 133
+        },
+        "capital": "Clermont-Ferrand",
+        "capital_coords": {
+            "lat": 45.7774551,
+            "lng": 3.0819427
+        },
+        "name": "Puy-de-D\u00f4me"
+    },
+    "64": {
+        "beds": {
+            "acute": 81,
+            "icu": 92
+        },
+        "capital": "Pau",
+        "capital_coords": {
+            "lat": 43.2957547,
+            "lng": -0.3685668
+        },
+        "name": "Pyr\u00e9n\u00e9es Atlantiques"
+    },
+    "65": {
+        "beds": {
+            "acute": 37,
+            "icu": 34
+        },
+        "capital": "Tarbes",
+        "capital_coords": {
+            "lat": 43.232858,
+            "lng": 0.0781021
+        },
+        "name": "Hautes Pyr\u00e9n\u00e9es"
+    },
+    "66": {
+        "beds": {
+            "acute": 39,
+            "icu": 64
+        },
+        "capital": "Perpignan",
+        "capital_coords": {
+            "lat": 42.6985304,
+            "lng": 2.8953121
+        },
+        "name": "Pyr\u00e9n\u00e9es Orientales"
+    },
+    "67": {
+        "beds": {
+            "acute": 219,
+            "icu": 238
+        },
+        "capital": "Strasbourg",
+        "capital_coords": {
+            "lat": 48.584614,
+            "lng": 7.7507127
+        },
+        "name": "Bas-Rhin"
+    },
+    "68": {
+        "beds": {
+            "acute": 112,
+            "icu": 138
+        },
+        "capital": "Colmar",
+        "capital_coords": {
+            "lat": 48.0777517,
+            "lng": 7.3579641
+        },
+        "name": "Haut-Rhin"
+    },
+    "69": {
+        "beds": {
+            "acute": 262,
+            "icu": 433
+        },
+        "capital": "Lyon",
+        "capital_coords": {
+            "lat": 45.7578137,
+            "lng": 4.8320114
+        },
+        "name": "Rh\u00f4ne"
+    },
+    "70": {
+        "beds": {
+            "acute": 25,
+            "icu": 24
+        },
+        "capital": "Vesoul",
+        "capital_coords": {
+            "lat": 47.6197395,
+            "lng": 6.1544694
+        },
+        "name": "Haute Sa\u00f4ne"
+    },
+    "71": {
+        "beds": {
+            "acute": 65,
+            "icu": 48
+        },
+        "capital": "M\u00e2con",
+        "capital_coords": {
+            "lat": 46.3036683,
+            "lng": 4.8322266
+        },
+        "name": "Sa\u00f4ne-et-Loire"
+    },
+    "72": {
+        "beds": {
+            "acute": 53,
+            "icu": 48
+        },
+        "capital": "Le Mans",
+        "capital_coords": {
+            "lat": 48.0073498,
+            "lng": 0.1967379
+        },
+        "name": "Sarthe"
+    },
+    "73": {
+        "beds": {
+            "acute": 50,
+            "icu": 36
+        },
+        "capital": "Chamb\u00e9ry",
+        "capital_coords": {
+            "lat": 45.5662672,
+            "lng": 5.9203636
+        },
+        "name": "Savoie"
+    },
+    "74": {
+        "beds": {
+            "acute": 83,
+            "icu": 75
+        },
+        "capital": "Annecy",
+        "capital_coords": {
+            "lat": 45.8992348,
+            "lng": 6.1288847
+        },
+        "name": "Haute Savoie"
+    },
+    "75": {
+        "beds": {
+            "acute": 337,
+            "icu": 1012
+        },
+        "capital": "Paris",
+        "capital_coords": {
+            "lat": 48.8566969,
+            "lng": 2.3514616
+        },
+        "name": "Paris"
+    },
+    "76": {
+        "beds": {
+            "acute": 188,
+            "icu": 253
+        },
+        "capital": "Rouen",
+        "capital_coords": {
+            "lat": 49.4404591,
+            "lng": 1.0939658
+        },
+        "name": "Seine Maritime"
+    },
+    "77": {
+        "beds": {
+            "acute": 134,
+            "icu": 127
+        },
+        "capital": "Melun",
+        "capital_coords": {
+            "lat": 48.539927,
+            "lng": 2.6608169
+        },
+        "name": "Seine-et-Marne"
+    },
+    "78": {
+        "beds": {
+            "acute": 114,
+            "icu": 186
+        },
+        "capital": "Versailles",
+        "capital_coords": {
+            "lat": 48.8035403,
+            "lng": 2.1266886
+        },
+        "name": "Yvelines"
+    },
+    "79": {
+        "beds": {
+            "acute": 24,
+            "icu": 26
+        },
+        "capital": "Niort",
+        "capital_coords": {
+            "lat": 46.3239455,
+            "lng": -0.4645212
+        },
+        "name": "Deux-S\u00e8vres"
+    },
+    "80": {
+        "beds": {
+            "acute": 91,
+            "icu": 148
+        },
+        "capital": "Amiens",
+        "capital_coords": {
+            "lat": 49.8941708,
+            "lng": 2.2956951
+        },
+        "name": "Somme"
+    },
+    "81": {
+        "beds": {
+            "acute": 43,
+            "icu": 59
+        },
+        "capital": "Albi",
+        "capital_coords": {
+            "lat": 43.9277552,
+            "lng": 2.147899
+        },
+        "name": "Tarn"
+    },
+    "82": {
+        "beds": {
+            "acute": 17,
+            "icu": 38
+        },
+        "capital": "Montauban",
+        "capital_coords": {
+            "lat": 44.0175835,
+            "lng": 1.3549991
+        },
+        "name": "Tarn-et-Garonne"
+    },
+    "83": {
+        "beds": {
+            "acute": 119,
+            "icu": 102
+        },
+        "capital": "Toulon",
+        "capital_coords": {
+            "lat": 43.1257311,
+            "lng": 5.9304919
+        },
+        "name": "Var"
+    },
+    "84": {
+        "beds": {
+            "acute": 87,
+            "icu": 46
+        },
+        "capital": "Avignon",
+        "capital_coords": {
+            "lat": 43.9492493,
+            "lng": 4.8059012
+        },
+        "name": "Vaucluse"
+    },
+    "85": {
+        "beds": {
+            "acute": 70,
+            "icu": 40
+        },
+        "capital": "La Roche-sur-Yon",
+        "capital_coords": {
+            "lat": 46.6705431,
+            "lng": -1.4269698
+        },
+        "name": "Vend\u00e9e"
+    },
+    "86": {
+        "beds": {
+            "acute": 45,
+            "icu": 118
+        },
+        "capital": "Poitiers",
+        "capital_coords": {
+            "lat": 46.5802596,
+            "lng": 0.340196
+        },
+        "name": "Vienne"
+    },
+    "87": {
+        "beds": {
+            "acute": 115,
+            "icu": 98
+        },
+        "capital": "Limoges",
+        "capital_coords": {
+            "lat": 45.8354243,
+            "lng": 1.2644847
+        },
+        "name": "Haute Vienne"
+    },
+    "88": {
+        "beds": {
+            "acute": 39,
+            "icu": 20
+        },
+        "capital": "\u00c9pinal",
+        "capital_coords": {
+            "lat": 48.1747684,
+            "lng": 6.4503643
+        },
+        "name": "Vosges"
+    },
+    "89": {
+        "beds": {
+            "acute": 35,
+            "icu": 34
+        },
+        "capital": "Auxerre",
+        "capital_coords": {
+            "lat": 47.7961287,
+            "lng": 3.570579
+        },
+        "name": "Yonne"
+    },
+    "90": {
+        "beds": {
+            "acute": 14,
+            "icu": 45
+        },
+        "capital": "Belfort",
+        "capital_coords": {
+            "lat": 47.6379599,
+            "lng": 6.8628942
+        },
+        "name": "Territoire de Belfort"
+    },
+    "91": {
+        "beds": {
+            "acute": 136,
+            "icu": 179
+        },
+        "capital": "Evry",
+        "capital_coords": {
+            "lat": 48.6296099,
+            "lng": 2.4435959
+        },
+        "name": "Essonne"
+    },
+    "92": {
+        "beds": {
+            "acute": 323,
+            "icu": 348
+        },
+        "capital": "Nanterre",
+        "capital_coords": {
+            "lat": 48.8924273,
+            "lng": 2.2071267
+        },
+        "name": "Hauts-de-Seine"
+    },
+    "93": {
+        "beds": {
+            "acute": 141,
+            "icu": 209
+        },
+        "capital": "Bobigny",
+        "capital_coords": {
+            "lat": 48.906387,
+            "lng": 2.4452231
+        },
+        "name": "Seine-St-Denis"
+    },
+    "94": {
+        "beds": {
+            "acute": 166,
+            "icu": 345
+        },
+        "capital": "Cr\u00e9teil",
+        "capital_coords": {
+            "lat": 48.7771486,
+            "lng": 2.4530731
+        },
+        "name": "Val-de-Marne"
+    },
+    "95": {
+        "beds": {
+            "acute": 69,
+            "icu": 125
+        },
+        "capital": "Pontoise",
+        "capital_coords": {
+            "lat": 49.0508845,
+            "lng": 2.1008067
+        },
+        "name": "Val-D'Oise"
+    },
+    "971": {
+        "beds": {
+            "acute": 20,
+            "icu": 63
+        },
+        "capital": "Basse-Terre",
+        "capital_coords": {
+            "lat": 16.0000778,
+            "lng": -61.7333373
+        },
+        "name": "Guadeloupe"
+    },
+    "972": {
+        "beds": {
+            "acute": 19,
+            "icu": 58
+        },
+        "capital": "Fort-de-France",
+        "capital_coords": {
+            "lat": 14.6027962,
+            "lng": -61.0676724
+        },
+        "name": "Martinique"
+    },
+    "973": {
+        "beds": {
+            "acute": 4,
+            "icu": 19
+        },
+        "capital": "Cayenne",
+        "capital_coords": {
+            "lat": 4.9371143,
+            "lng": -52.3258307
+        },
+        "name": "Guyane"
+    },
+    "974": {
+        "beds": {
+            "acute": 70,
+            "icu": 138
+        },
+        "capital": "Saint-Denis",
+        "capital_coords": {
+            "lat": -20.8799889,
+            "lng": 55.448137
+        },
+        "name": "La-Reunion"
+    },
+    "976": {
+        "beds": {
+            "acute": 8,
+            "icu": 10
+        },
+        "capital": "Mamoudzou",
+        "capital_coords": {
+            "lat": -12.7805856,
+            "lng": 45.2279908
+        },
+        "name": "Mayotte"
+    }
+}
