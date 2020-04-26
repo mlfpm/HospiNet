@@ -52,24 +52,28 @@ app.layout = html.Div(
 
                         html.H1("HospiNet"),
                         html.P(
-                            """Simulate the load caused by the SARS-CoV-2 pandemic on the french hospital network. The 'Simulate' button allows you to 
-                            display the behaviour of the network with the selected parameters. 
+                            """Simulate the load caused by the SARS-CoV-2 pandemic on the french hospital network. 
                             """
                         ),
-
-                        html.P(
-                            """
-                            The checkbox below selects whether the simulation allows the transfer of patients between hospitals. If it is active,
-                            the user needs to select the threshold values of capacity for Acute and ICU patients beyond which a hospital will try to transfer
-                            some of the load to other hospitals. The Max Distance threshold selects how far a patient can travel in a transfer between hospitals. 
-                            """
-                        ),
-                        html.P(
-                            """
-                            The tabs at the top of the graphs allow you to switch between the global network graph animation and the visualization
-                            of the evolution for a specific department. 
-                            """
-                        ),
+                        # html.P(
+                        #     """
+                        #     The 'Simulate' button allows you to 
+                        #     display the behaviour of the network with the selected parameters. 
+                        #     """
+                        # ),
+                        # html.P(
+                        #     """
+                        #     The checkbox below selects whether the simulation allows the transfer of patients between hospitals. If it is active,
+                        #     the user needs to select the threshold values of capacity for Acute and ICU patients beyond which a hospital will try to transfer
+                        #     some of the load to other hospitals. The Max Distance threshold selects how far a patient can travel in a transfer between hospitals. 
+                        #     """
+                        # ),
+                        # html.P(
+                        #     """
+                        #     The tabs at the top of the graphs allow you to switch between the global network graph animation and the visualization
+                        #     of the evolution for a specific department. 
+                        #     """
+                        # ),
                         html.P(
                             """
                             For more info refer to:
