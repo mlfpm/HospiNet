@@ -74,7 +74,7 @@ app.layout = html.Div(
                         html.Div(
                             className="div-for-dropdown",
                             children=[html.Label(
-                                        'Percentage To Show'),
+                                        'Quantity To Show'),
                                 dcc.Dropdown(
                                     id='animate-dropdown',
                                     options=[
@@ -99,7 +99,7 @@ app.layout = html.Div(
                         html.Div(id='form_div',
                                  className="div-for-dropdown",
                                  children=[
-                                     html.H3("HospiNet"),
+                                     html.H3("Thresholds"),
                                     html.Div(className="flex-row",
                                     children=[html.Label(
                                          'Capacity (%)'),
@@ -121,17 +121,28 @@ app.layout = html.Div(
                                         )
                                         ])
                                     ]),
-                                     html.Label(
-                                         'Max Distance Acute Threshold (km)'),
-                                     dcc.Input(
+                                    html.Div(className="flex-row",
+                                    children=[html.Label(
+                                         'Max Distance (km)'),
+                                        html.Div(className="input-with-label",
+                                        children=[
+                                             html.Label(
+                                            'Acute'),
+                                            dcc.Input(
                                          id="distance_acute_threshold", type="number", value=500,
-                                         min=100, max=1000, step=20
-                                     ),
-                                     html.Label('Max Distance ICU Threshold'),
-                                     dcc.Input(
+                                         min=100, max=3000, step=20
+                                        )
+                                        ]),
+                                        html.Div(className="input-with-label",
+                                        children=[
+                                            html.Label('ICU'),
+                                        dcc.Input(
                                          id="distance_icu_threshold", type="number", value=500,
                                          min=100, max=1000, step=20
-                                     ),
+                                        )
+                                        ])
+                                    ]),
+
                                  ], style={"display": "none"}
                                  ),
                         html.Div(
@@ -155,7 +166,9 @@ app.layout = html.Div(
                         html.Div(id="occupancy_tab",
                             #className="text-padding",
                             children=[
-                                "Show hospital occupancy for the current simulation.    ",
+                                html.Div(
+                                    className="div-for-dropdown",
+                                    children=[
                                 dcc.Dropdown(
                                     id='department-dropdown',
                                     options=[
@@ -348,7 +361,7 @@ app.layout = html.Div(
                                     ],
                                     value='75',
                                     clearable=False
-                                ),
+                                )]),
                                 html.Div(id='occupancy_div', style={"height": "90%"}),
                             ],
                         ),

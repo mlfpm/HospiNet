@@ -608,13 +608,14 @@ a {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-bottom: 10px;
 }
 
 .input-with-label {
   display: inline-flex;
   flex-direction: column;
+  margin: 0px 15px;
 }
 
 .checkboxes:hover {
@@ -633,6 +634,15 @@ input[type="checkbox"] {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+input[type="number"] {
+  width: 120px;
+}
+
+#submit-val {
+  width: 100%;
+  height: 45px;
 }
 
 /* LOADING DIV*/
