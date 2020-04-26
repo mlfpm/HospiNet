@@ -461,6 +461,7 @@ a {
   height: 60px;
   padding-bottom: 12px;
 }
+
 .Select-control, .Select-menu-outer, .Select-multi-value-wrapper, .select-up, .is-open .Select-control {
   background-color: #1E1E1E;
   color: white;
@@ -610,6 +611,16 @@ a {
   align-items: flex-end;
   justify-content: flex-end;
   padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.flex-row-between {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 .input-with-label {

@@ -39,8 +39,7 @@ app.layout = html.Div(
                     className="four columns div-user-controls",
                     children=[
                         html.Div(
-                            style={"display": "flex",
-                                   "justify-content": "space-between"},
+                            className="flex-row-between",
                             children=[
                                 html.A(children=[html.Img(
                                     className="logo", src=app.get_asset_url("mlfpm_logo.png")
