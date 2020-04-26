@@ -254,8 +254,8 @@ def animate_graph(time_df, animate: str, style="carto-positron"):
         zoom=5,
         opacity=0.6,
         hover_name="dep",
-        width=800,
-        height=800,
+        # width=800,
+        # height=800,
     )
 
     fig.add_scattermapbox(
