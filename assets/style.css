@@ -670,6 +670,12 @@ input[type="number"] {
   color: #fff !important;
   font-weight: bold;
 }
+
+
+.btn {
+  margin-left: 10px;
+  margin-bottom: 3rem !important;
+}
 /* LOADING DIV*/
 @keyframes fadein {
   0% {

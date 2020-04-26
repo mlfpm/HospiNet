@@ -18,6 +18,7 @@ import json
 
 import dash
 import dash_core_components as dcc
+import dash_bootstrap_components as dbc
 import dash_html_components as html
 from dash.dependencies import Output, Input, State
 
@@ -25,7 +26,7 @@ from scripts.utils import animate_graph, plot_occupancy_evolution, on_submit_cal
 
 time_df = pd.DataFrame()
 
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "HospiNet"
 server = app.server
 
@@ -54,6 +55,41 @@ app.layout = html.Div(
                         html.P(
                             """Simulate the load caused by the SARS-CoV-2 pandemic on the french hospital network. 
                             """
+                        ),
+                        html.Div(
+                            [
+                                dbc.Button(
+                                    "Show Help",
+                                    id="collapse-button",
+                                    className="mb-3",
+                                    color="secondary",
+                                ),
+                                dbc.Collapse(
+                                    dbc.Card(dbc.CardBody(
+                                        children=[html.P(
+                                            """
+                                            The 'Simulate' button allows you to 
+                                            display the behaviour of the network with the selected parameters. 
+                                            """
+                                        ),
+                                        html.P(
+                                            """
+                                            The checkbox below selects whether the simulation allows the transfer of patients between hospitals. If it is active,
+                                            the user needs to select the threshold values of capacity for Acute and ICU patients beyond which a hospital will try to transfer
+                                            some of the load to other hospitals. The Max Distance threshold selects how far a patient can travel in a transfer between hospitals. 
+                                            """
+                                        ),
+                                        html.P(
+                                            """
+                                            The tabs at the top of the graphs allow you to switch between the global network graph animation and the visualization
+                                            of the evolution for a specific department. 
+                                            """
+                                        )]
+                                    ), color="dark", inverse=True),
+                                    id="collapse",
+                                    is_open=False
+                                ),
+                            ]
                         ),
                         # html.P(
                         #     """
@@ -454,29 +490,16 @@ def select_tab(tab):
         return ({'display': 'none'}, {'display': 'block', "height": "100%"})
     return ({'display': 'block'}, {'display': 'none'})
 
-# @app.callback(Output('occupancy_div', 'children'),
-#               [Input('submit-val', 'n_clicks'),
-#                Input('checkbox', 'value')],
-#               [State('animate-dropdown', 'value'),   
-#                State('department-dropdown', 'value'),
-#                State('capacity_acute_threshold', 'value'),
-#                State('capacity_icu_threshold', 'value'),
-#                State('distance_acute_threshold', 'value'),
-#                State('distance_icu_threshold', 'value')])
-# def occupancy_graph(clicks, propagation_bool, department, animate_value, capacity_acute, capacity_icu, distance_acute, distance_icu):
-#     max_dist_dict = {"icu": distance_icu, "acute": distance_acute}
-#     cap_thresh_dict = {"icu": float(capacity_icu)/100, "acute": float(capacity_acute)/100}
-#     time_df = on_submit_call(max_dist_dict, cap_thresh_dict, propagation_bool)
-#     figure = plot_occupancy_evolution(time_df, animate_value, str(department))
-#     return dcc.Graph(figure=figure)#, style={"height": "100%"})
 
-
-# @app.callback(dash.dependencies.Output(component_id='my-div', component_property='children'),
-#               [dash.dependencies.Input('submit-val', 'n_clicks')],
-#               [dash.dependencies.State('capacity_acute_threshold', 'value')])
-# def update_desc(clicks, capacity_acute):
-#     return 'You\'ve entered {}'.format(capacity_acute)
-
+@app.callback(
+    Output("collapse", "is_open"),
+    [Input("collapse-button", "n_clicks")],
+    [State("collapse", "is_open")],
+)
+def toggle_collapse(n, is_open):
+    if n:
+        return not is_open
+    return is_open
 
 @server.route('/favicon.ico')
 def favicon():
