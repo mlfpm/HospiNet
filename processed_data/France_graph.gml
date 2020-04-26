@@ -8,7 +8,8 @@ graph [
       lng 2.5727883
     ]
     capital "Rodez"
-    population 278360
+    icu 27
+    acute 19
   ]
   node [
     id 1
@@ -19,7 +20,8 @@ graph [
       lng 1.4364999
     ]
     capital "Cahors"
-    population 173166
+    icu 12
+    acute 10
   ]
   node [
     id 2
@@ -30,7 +32,8 @@ graph [
       lng 0.7184407
     ]
     capital "P&#233;rigueux"
-    population 408393
+    icu 37
+    acute 34
   ]
   node [
     id 3
@@ -41,7 +44,8 @@ graph [
       lng -0.5800364
     ]
     capital "Bordeaux"
-    population 1633440
+    icu 326
+    acute 250
   ]
   node [
     id 4
@@ -52,7 +56,8 @@ graph [
       lng -0.500972
     ]
     capital "Mont-de-Marsan"
-    population 411979
+    icu 30
+    acute 25
   ]
   node [
     id 5
@@ -63,7 +68,8 @@ graph [
       lng -0.3685668
     ]
     capital "Pau"
-    population 683169
+    icu 92
+    acute 81
   ]
   node [
     id 6
@@ -74,7 +80,8 @@ graph [
       lng 0.0781021
     ]
     capital "Tarbes"
-    population 226839
+    icu 34
+    acute 37
   ]
   node [
     id 7
@@ -85,7 +92,8 @@ graph [
       lng 1.4442469
     ]
     capital "Toulouse"
-    population 1400935
+    icu 370
+    acute 271
   ]
   node [
     id 8
@@ -96,7 +104,8 @@ graph [
       lng 1.6053807
     ]
     capital "Foix"
-    population 152398
+    icu 16
+    acute 6
   ]
   node [
     id 9
@@ -107,7 +116,8 @@ graph [
       lng 2.147899
     ]
     capital "Albi"
-    population 387898
+    icu 59
+    acute 43
   ]
   node [
     id 10
@@ -118,7 +128,8 @@ graph [
       lng 1.3549991
     ]
     capital "Montauban"
-    population 262618
+    icu 38
+    acute 17
   ]
   node [
     id 11
@@ -129,7 +140,8 @@ graph [
       lng 0.6176324
     ]
     capital "Agen"
-    population 330336
+    icu 29
+    acute 36
   ]
   node [
     id 12
@@ -140,7 +152,8 @@ graph [
       lng 0.5850507
     ]
     capital "Auch"
-    population 190040
+    icu 12
+    acute 8
   ]
   node [
     id 13
@@ -151,7 +164,8 @@ graph [
       lng 1.2644847
     ]
     capital "Limoges"
-    population 370774
+    icu 98
+    acute 115
   ]
   node [
     id 14
@@ -162,7 +176,8 @@ graph [
       lng 1.8713349
     ]
     capital "Gu&#233;ret"
-    population 116270
+    icu 16
+    acute 12
   ]
   node [
     id 15
@@ -173,7 +188,8 @@ graph [
       lng 1.7706904
     ]
     capital "Tulle"
-    population 240336
+    icu 36
+    acute 35
   ]
   node [
     id 16
@@ -184,7 +200,8 @@ graph [
       lng 3.3331703
     ]
     capital "Moulins"
-    population 331315
+    icu 52
+    acute 26
   ]
   node [
     id 17
@@ -195,7 +212,8 @@ graph [
       lng 3.0819427
     ]
     capital "Clermont-Ferrand"
-    population 660240
+    icu 133
+    acute 87
   ]
   node [
     id 18
@@ -206,7 +224,8 @@ graph [
       lng 2.4433101
     ]
     capital "Aurillac"
-    population 142811
+    icu 23
+    acute 21
   ]
   node [
     id 19
@@ -217,7 +236,8 @@ graph [
       lng 3.2407312
     ]
     capital "Le Puy"
-    population 226901
+    icu 18
+    acute 13
   ]
   node [
     id 20
@@ -228,7 +248,8 @@ graph [
       lng 4.3873058
     ]
     capital "St-&#201;tienne"
-    population 764737
+    icu 138
+    acute 90
   ]
   node [
     id 21
@@ -239,7 +260,8 @@ graph [
       lng 4.8320114
     ]
     capital "Lyon"
-    population 1876051
+    icu 433
+    acute 262
   ]
   node [
     id 22
@@ -250,7 +272,8 @@ graph [
       lng 4.5986733
     ]
     capital "Privas"
-    population 326875
+    icu 8
+    acute 44
   ]
   node [
     id 23
@@ -261,7 +284,8 @@ graph [
       lng 4.8920811
     ]
     capital "Valence"
-    population 520560
+    icu 58
+    acute 42
   ]
   node [
     id 24
@@ -272,7 +296,8 @@ graph [
       lng 5.7357819
     ]
     capital "Grenoble"
-    population 1264979
+    icu 171
+    acute 81
   ]
   node [
     id 25
@@ -283,32 +308,11 @@ graph [
       lng 5.9203636
     ]
     capital "Chamb&#233;ry"
-    population 432548
+    icu 36
+    acute 50
   ]
   node [
     id 26
-    label "2A"
-    name "Corse-du-Sud"
-    coords [
-      lat 41.9263991
-      lng 8.7376029
-    ]
-    capital "Ajaccio"
-    population 162421
-  ]
-  node [
-    id 27
-    label "2B"
-    name "Haute Corse"
-    coords [
-      lat 42.7065505
-      lng 9.452542
-    ]
-    capital "Bastia"
-    population 182258
-  ]
-  node [
-    id 28
     label "04"
     name "Alpes-de-Haute-Provence"
     coords [
@@ -316,10 +320,11 @@ graph [
       lng 6.2351431
     ]
     capital "Digne"
-    population 165197
+    icu 6
+    acute 10
   ]
   node [
-    id 29
+    id 27
     label "05"
     name "Hautes-Alpes"
     coords [
@@ -327,10 +332,11 @@ graph [
       lng 6.0820018
     ]
     capital "Gap"
-    population 141756
+    icu 8
+    acute 23
   ]
   node [
-    id 30
+    id 28
     label "06"
     name "Alpes Maritimes"
     coords [
@@ -338,10 +344,11 @@ graph [
       lng 7.2683912
     ]
     capital "Nice"
-    population 1079396
+    icu 185
+    acute 263
   ]
   node [
-    id 31
+    id 29
     label "83"
     name "Var"
     coords [
@@ -349,10 +356,11 @@ graph [
       lng 5.9304919
     ]
     capital "Toulon"
-    population 1073836
+    icu 102
+    acute 119
   ]
   node [
-    id 32
+    id 30
     label "13"
     name "Bouches-du-Rh&#244;ne"
     coords [
@@ -360,10 +368,11 @@ graph [
       lng 5.3699525
     ]
     capital "Marseille"
-    population 2034469
+    icu 547
+    acute 381
   ]
   node [
-    id 33
+    id 31
     label "84"
     name "Vaucluse"
     coords [
@@ -371,10 +380,11 @@ graph [
       lng 4.8059012
     ]
     capital "Avignon"
-    population 560997
+    icu 46
+    acute 87
   ]
   node [
-    id 34
+    id 32
     label "30"
     name "Gard"
     coords [
@@ -382,10 +392,11 @@ graph [
       lng 4.3600687
     ]
     capital "N&#238;mes"
-    population 748468
+    icu 103
+    acute 80
   ]
   node [
-    id 35
+    id 33
     label "48"
     name "Loz&#232;re"
     coords [
@@ -393,10 +404,11 @@ graph [
       lng 3.4991057
     ]
     capital "Mende"
-    population 76286
+    icu 3
+    acute 3
   ]
   node [
-    id 36
+    id 34
     label "34"
     name "H&#233;rault"
     coords [
@@ -404,10 +416,11 @@ graph [
       lng 3.8767337
     ]
     capital "Montpellier"
-    population 1176145
+    icu 299
+    acute 203
   ]
   node [
-    id 37
+    id 35
     label "11"
     name "Aude"
     coords [
@@ -415,10 +428,11 @@ graph [
       lng 2.3491069
     ]
     capital "Carcassonne"
-    population 372705
+    icu 38
+    acute 29
   ]
   node [
-    id 38
+    id 36
     label "66"
     name "Pyr&#233;n&#233;es Orientales"
     coords [
@@ -426,10 +440,11 @@ graph [
       lng 2.8953121
     ]
     capital "Perpignan"
-    population 479000
+    icu 64
+    acute 39
   ]
   node [
-    id 39
+    id 37
     label "62"
     name "Pas-de-Calais"
     coords [
@@ -437,10 +452,11 @@ graph [
       lng 2.7772211
     ]
     capital "Arras"
-    population 1452778
+    icu 222
+    acute 149
   ]
   node [
-    id 40
+    id 38
     label "59"
     name "Nord"
     coords [
@@ -448,10 +464,11 @@ graph [
       lng 3.0635282
     ]
     capital "Lille"
-    population 2588988
+    icu 588
+    acute 355
   ]
   node [
-    id 41
+    id 39
     label "80"
     name "Somme"
     coords [
@@ -459,10 +476,11 @@ graph [
       lng 2.2956951
     ]
     capital "Amiens"
-    population 569769
+    icu 148
+    acute 91
   ]
   node [
-    id 42
+    id 40
     label "60"
     name "Oise"
     coords [
@@ -470,10 +488,11 @@ graph [
       lng 2.0823355
     ]
     capital "Beauvais"
-    population 825077
+    icu 82
+    acute 45
   ]
   node [
-    id 43
+    id 41
     label "02"
     name "Aisne"
     coords [
@@ -481,10 +500,11 @@ graph [
       lng 3.620686
     ]
     capital "Laon"
-    population 526050
+    icu 89
+    acute 32
   ]
   node [
-    id 44
+    id 42
     label "95"
     name "Val-D'Oise"
     coords [
@@ -492,10 +512,11 @@ graph [
       lng 2.1008067
     ]
     capital "Pontoise"
-    population 1248354
+    icu 125
+    acute 69
   ]
   node [
-    id 45
+    id 43
     label "77"
     name "Seine-et-Marne"
     coords [
@@ -503,10 +524,11 @@ graph [
       lng 2.6608169
     ]
     capital "Melun"
-    population 1423607
+    icu 127
+    acute 134
   ]
   node [
-    id 46
+    id 44
     label "78"
     name "Yvelines"
     coords [
@@ -514,10 +536,11 @@ graph [
       lng 2.1266886
     ]
     capital "Versailles"
-    population 1448625
+    icu 186
+    acute 114
   ]
   node [
-    id 47
+    id 45
     label "91"
     name "Essonne"
     coords [
@@ -525,10 +548,11 @@ graph [
       lng 2.4435959
     ]
     capital "Evry"
-    population 1319401
+    icu 179
+    acute 136
   ]
   node [
-    id 48
+    id 46
     label "28"
     name "Eure-et-Loir"
     coords [
@@ -536,10 +560,11 @@ graph [
       lng 1.4881434
     ]
     capital "Chartres"
-    population 429425
+    icu 42
+    acute 42
   ]
   node [
-    id 49
+    id 47
     label "45"
     name "Loiret"
     coords [
@@ -547,10 +572,11 @@ graph [
       lng 1.9086066
     ]
     capital "Orl&#233;ans"
-    population 682890
+    icu 111
+    acute 134
   ]
   node [
-    id 50
+    id 48
     label "41"
     name "Loir-et-Cher"
     coords [
@@ -558,10 +584,11 @@ graph [
       lng 1.3337639
     ]
     capital "Blois"
-    population 327835
+    icu 20
+    acute 35
   ]
   node [
-    id 51
+    id 49
     label "18"
     name "Cher"
     coords [
@@ -569,10 +596,11 @@ graph [
       lng 2.398932
     ]
     capital "Bourges"
-    population 296404
+    icu 28
+    acute 44
   ]
   node [
-    id 52
+    id 50
     label "37"
     name "Indre-et-Loire"
     coords [
@@ -580,10 +608,11 @@ graph [
       lng 0.6889268
     ]
     capital "Tours"
-    population 605380
+    icu 144
+    acute 116
   ]
   node [
-    id 53
+    id 51
     label "36"
     name "Indre"
     coords [
@@ -591,10 +620,11 @@ graph [
       lng 1.6957099
     ]
     capital "Ch&#226;teauroux"
-    population 217139
+    icu 19
+    acute 22
   ]
   node [
-    id 54
+    id 52
     label "92"
     name "Hauts-de-Seine"
     coords [
@@ -602,10 +632,11 @@ graph [
       lng 2.2071267
     ]
     capital "Nanterre"
-    population 1613762
+    icu 348
+    acute 323
   ]
   node [
-    id 55
+    id 53
     label "93"
     name "Seine-St-Denis"
     coords [
@@ -613,10 +644,11 @@ graph [
       lng 2.4452231
     ]
     capital "Bobigny"
-    population 1670149
+    icu 209
+    acute 141
   ]
   node [
-    id 56
+    id 54
     label "75"
     name "Paris"
     coords [
@@ -624,10 +656,11 @@ graph [
       lng 2.3514616
     ]
     capital "Paris"
-    population 2148271
+    icu 1012
+    acute 337
   ]
   node [
-    id 57
+    id 55
     label "94"
     name "Val-de-Marne"
     coords [
@@ -635,10 +668,11 @@ graph [
       lng 2.4530731
     ]
     capital "Cr&#233;teil"
-    population 1406041
+    icu 345
+    acute 166
   ]
   node [
-    id 58
+    id 56
     label "08"
     name "Ardennes"
     coords [
@@ -646,10 +680,11 @@ graph [
       lng 4.7206939
     ]
     capital "Charleville-M&#233;zi&#232;res"
-    population 265531
+    icu 33
+    acute 15
   ]
   node [
-    id 59
+    id 57
     label "51"
     name "Marne"
     coords [
@@ -657,10 +692,11 @@ graph [
       lng 4.3628851
     ]
     capital "Ch&#226;lons-sur-Marne"
-    population 563823
+    icu 99
+    acute 63
   ]
   node [
-    id 60
+    id 58
     label "10"
     name "Aube"
     coords [
@@ -668,10 +704,11 @@ graph [
       lng 4.0746257
     ]
     capital "Troyes"
-    population 309907
+    icu 30
+    acute 38
   ]
   node [
-    id 61
+    id 59
     label "52"
     name "Haute Marne"
     coords [
@@ -679,10 +716,11 @@ graph [
       lng 5.1395849
     ]
     capital "Chaumont"
-    population 169250
+    icu 14
+    acute 30
   ]
   node [
-    id 62
+    id 60
     label "55"
     name "Meuse"
     coords [
@@ -690,10 +728,11 @@ graph [
       lng 5.1623805
     ]
     capital "Bar-le-Duc"
-    population 181641
+    icu 18
+    acute 12
   ]
   node [
-    id 63
+    id 61
     label "54"
     name "Meurthe-et-Moselle"
     coords [
@@ -701,10 +740,11 @@ graph [
       lng 6.1834097
     ]
     capital "Nancy"
-    population 730398
+    icu 181
+    acute 173
   ]
   node [
-    id 64
+    id 62
     label "57"
     name "Moselle"
     coords [
@@ -712,10 +752,11 @@ graph [
       lng 6.1763552
     ]
     capital "Metz"
-    population 1035866
+    icu 144
+    acute 91
   ]
   node [
-    id 65
+    id 63
     label "88"
     name "Vosges"
     coords [
@@ -723,10 +764,11 @@ graph [
       lng 6.4503643
     ]
     capital "&#201;pinal"
-    population 359520
+    icu 20
+    acute 39
   ]
   node [
-    id 66
+    id 64
     label "67"
     name "Bas-Rhin"
     coords [
@@ -734,10 +776,11 @@ graph [
       lng 7.7507127
     ]
     capital "Strasbourg"
-    population 1132607
+    icu 238
+    acute 219
   ]
   node [
-    id 67
+    id 65
     label "68"
     name "Haut-Rhin"
     coords [
@@ -745,10 +788,11 @@ graph [
       lng 7.3579641
     ]
     capital "Colmar"
-    population 763204
+    icu 138
+    acute 112
   ]
   node [
-    id 68
+    id 66
     label "89"
     name "Yonne"
     coords [
@@ -756,10 +800,11 @@ graph [
       lng 3.570579
     ]
     capital "Auxerre"
-    population 332096
+    icu 34
+    acute 35
   ]
   node [
-    id 69
+    id 67
     label "21"
     name "C&#244;te-d'Or"
     coords [
@@ -767,10 +812,11 @@ graph [
       lng 5.0414701
     ]
     capital "Dijon"
-    population 532886
+    icu 158
+    acute 96
   ]
   node [
-    id 70
+    id 68
     label "58"
     name "Ni&#232;vre"
     coords [
@@ -778,10 +824,11 @@ graph [
       lng 3.1577203
     ]
     capital "Nevers"
-    population 199596
+    icu 28
+    acute 24
   ]
   node [
-    id 71
+    id 69
     label "71"
     name "Sa&#244;ne-et-Loire"
     coords [
@@ -789,10 +836,11 @@ graph [
       lng 4.8322266
     ]
     capital "M&#226;con"
-    population 547824
+    icu 48
+    acute 65
   ]
   node [
-    id 72
+    id 70
     label "70"
     name "Haute Sa&#244;ne"
     coords [
@@ -800,10 +848,11 @@ graph [
       lng 6.1544694
     ]
     capital "Vesoul"
-    population 233194
+    icu 24
+    acute 25
   ]
   node [
-    id 73
+    id 71
     label "90"
     name "Territoire de Belfort"
     coords [
@@ -811,10 +860,11 @@ graph [
       lng 6.8628942
     ]
     capital "Belfort"
-    population 140145
+    icu 45
+    acute 14
   ]
   node [
-    id 74
+    id 72
     label "25"
     name "Doubs"
     coords [
@@ -822,10 +872,11 @@ graph [
       lng 6.0243622
     ]
     capital "Besan&#231;on"
-    population 539449
+    icu 174
+    acute 96
   ]
   node [
-    id 75
+    id 73
     label "39"
     name "Jura"
     coords [
@@ -833,10 +884,11 @@ graph [
       lng 5.5586167
     ]
     capital "Lons-le-Saunier"
-    population 257849
+    icu 17
+    acute 10
   ]
   node [
-    id 76
+    id 74
     label "29"
     name "Finist&#232;re"
     coords [
@@ -844,10 +896,11 @@ graph [
       lng -4.1024782
     ]
     capital "Quimper"
-    population 906554
+    icu 140
+    acute 90
   ]
   node [
-    id 77
+    id 75
     label "22"
     name "C&#244;tes d'Armor"
     coords [
@@ -855,10 +908,11 @@ graph [
       lng -2.7602707
     ]
     capital "St-Brieuc"
-    population 596186
+    icu 30
+    acute 59
   ]
   node [
-    id 78
+    id 76
     label "56"
     name "Morbihan"
     coords [
@@ -866,10 +920,11 @@ graph [
       lng -2.7599079
     ]
     capital "Vannes"
-    population 755566
+    icu 54
+    acute 66
   ]
   node [
-    id 79
+    id 77
     label "35"
     name "Ille-et-Vilaine"
     coords [
@@ -877,10 +932,11 @@ graph [
       lng -1.6800198
     ]
     capital "Rennes"
-    population 1082073
+    icu 178
+    acute 120
   ]
   node [
-    id 80
+    id 78
     label "44"
     name "Loire Atlantique"
     coords [
@@ -888,10 +944,11 @@ graph [
       lng -1.5541362
     ]
     capital "Nantes"
-    population 1437137
+    icu 218
+    acute 148
   ]
   node [
-    id 81
+    id 79
     label "85"
     name "Vend&#233;e"
     coords [
@@ -899,10 +956,11 @@ graph [
       lng -1.4269698
     ]
     capital "La Roche-sur-Yon"
-    population 683187
+    icu 40
+    acute 70
   ]
   node [
-    id 82
+    id 80
     label "53"
     name "Mayenne"
     coords [
@@ -910,10 +968,11 @@ graph [
       lng -0.7723499
     ]
     capital "Laval"
-    population 305365
+    icu 16
+    acute 14
   ]
   node [
-    id 83
+    id 81
     label "49"
     name "Maine-et-Loire"
     coords [
@@ -921,10 +980,11 @@ graph [
       lng -0.5515588
     ]
     capital "Angers"
-    population 815881
+    icu 164
+    acute 77
   ]
   node [
-    id 84
+    id 82
     label "72"
     name "Sarthe"
     coords [
@@ -932,10 +992,11 @@ graph [
       lng 0.1967379
     ]
     capital "Le Mans"
-    population 560227
+    icu 48
+    acute 53
   ]
   node [
-    id 85
+    id 83
     label "79"
     name "Deux-S&#232;vres"
     coords [
@@ -943,10 +1004,11 @@ graph [
       lng -0.4645212
     ]
     capital "Niort"
-    population 372627
+    icu 26
+    acute 24
   ]
   node [
-    id 86
+    id 84
     label "17"
     name "Charente-Maritime"
     coords [
@@ -954,10 +1016,11 @@ graph [
       lng -1.1520434
     ]
     capital "La Rochelle"
-    population 647080
+    icu 66
+    acute 53
   ]
   node [
-    id 87
+    id 85
     label "16"
     name "Charente"
     coords [
@@ -965,10 +1028,11 @@ graph [
       lng 0.1576745
     ]
     capital "Angoul&#234;me"
-    population 348180
+    icu 30
+    acute 38
   ]
   node [
-    id 88
+    id 86
     label "86"
     name "Vienne"
     coords [
@@ -976,10 +1040,11 @@ graph [
       lng 0.340196
     ]
     capital "Poitiers"
-    population 437398
+    icu 118
+    acute 45
   ]
   node [
-    id 89
+    id 87
     label "50"
     name "Manche"
     coords [
@@ -987,10 +1052,11 @@ graph [
       lng -1.0906637
     ]
     capital "St-L&#244;"
-    population 490669
+    icu 54
+    acute 34
   ]
   node [
-    id 90
+    id 88
     label "14"
     name "Calvados"
     coords [
@@ -998,10 +1064,11 @@ graph [
       lng -0.3690815
     ]
     capital "Caen"
-    population 691453
+    icu 163
+    acute 106
   ]
   node [
-    id 91
+    id 89
     label "61"
     name "Orne"
     coords [
@@ -1009,10 +1076,11 @@ graph [
       lng 0.0911374
     ]
     capital "Alen&#231;on"
-    population 276903
+    icu 28
+    acute 21
   ]
   node [
-    id 92
+    id 90
     label "27"
     name "Eure"
     coords [
@@ -1020,10 +1088,11 @@ graph [
       lng 1.1510164
     ]
     capital "Evreux"
-    population 600687
+    icu 34
+    acute 14
   ]
   node [
-    id 93
+    id 91
     label "76"
     name "Seine Maritime"
     coords [
@@ -1031,10 +1100,11 @@ graph [
       lng 1.0939658
     ]
     capital "Rouen"
-    population 1243788
+    icu 253
+    acute 188
   ]
   node [
-    id 94
+    id 92
     label "01"
     name "Ain"
     coords [
@@ -1042,10 +1112,11 @@ graph [
       lng 5.2250324
     ]
     capital "Bourg-en-Bresse"
-    population 656955
+    icu 32
+    acute 22
   ]
   node [
-    id 95
+    id 93
     label "74"
     name "Haute Savoie"
     coords [
@@ -1053,7 +1124,8 @@ graph [
       lng 6.1288847
     ]
     capital "Annecy"
-    population 828405
+    icu 75
+    acute 83
   ]
   edge [
     source 0
@@ -1069,13 +1141,13 @@ graph [
   ]
   edge [
     source 0
-    target 34
+    target 32
     distance 234411
     time 10274
   ]
   edge [
     source 0
-    target 36
+    target 34
     distance 176987
     time 7817
   ]
@@ -1087,7 +1159,7 @@ graph [
   ]
   edge [
     source 0
-    target 35
+    target 33
     distance 107436
     time 5366
   ]
@@ -1135,7 +1207,7 @@ graph [
   ]
   edge [
     source 2
-    target 87
+    target 85
     distance 82703
     time 4722
   ]
@@ -1165,7 +1237,7 @@ graph [
   ]
   edge [
     source 3
-    target 86
+    target 84
     distance 184496
     time 7172
   ]
@@ -1231,7 +1303,7 @@ graph [
   ]
   edge [
     source 7
-    target 37
+    target 35
     distance 94840
     time 4029
   ]
@@ -1255,25 +1327,25 @@ graph [
   ]
   edge [
     source 8
-    target 37
+    target 35
     distance 81610
     time 4523
   ]
   edge [
     source 8
-    target 38
+    target 36
     distance 139446
     time 8508
   ]
   edge [
     source 9
-    target 37
+    target 35
     distance 165583
     time 6051
   ]
   edge [
     source 9
-    target 36
+    target 34
     distance 195775
     time 9517
   ]
@@ -1303,7 +1375,7 @@ graph [
   ]
   edge [
     source 13
-    target 87
+    target 85
     distance 107441
     time 5157
   ]
@@ -1321,13 +1393,13 @@ graph [
   ]
   edge [
     source 13
-    target 53
+    target 51
     distance 123829
     time 4626
   ]
   edge [
     source 13
-    target 88
+    target 86
     distance 123458
     time 7092
   ]
@@ -1339,7 +1411,7 @@ graph [
   ]
   edge [
     source 14
-    target 51
+    target 49
     distance 169187
     time 6192
   ]
@@ -1351,7 +1423,7 @@ graph [
   ]
   edge [
     source 14
-    target 53
+    target 51
     distance 123188
     time 4787
   ]
@@ -1375,7 +1447,7 @@ graph [
   ]
   edge [
     source 16
-    target 51
+    target 49
     distance 101299
     time 5263
   ]
@@ -1387,13 +1459,7 @@ graph [
   ]
   edge [
     source 16
-    target 78
-    distance 609803
-    time 20429
-  ]
-  edge [
-    source 16
-    target 70
+    target 68
     distance 59413
     time 3102
   ]
@@ -1405,7 +1471,7 @@ graph [
   ]
   edge [
     source 16
-    target 71
+    target 69
     distance 138423
     time 6478
   ]
@@ -1435,7 +1501,7 @@ graph [
   ]
   edge [
     source 18
-    target 35
+    target 33
     distance 150148
     time 7558
   ]
@@ -1453,7 +1519,7 @@ graph [
   ]
   edge [
     source 19
-    target 35
+    target 33
     distance 107489
     time 4513
   ]
@@ -1477,13 +1543,13 @@ graph [
   ]
   edge [
     source 20
-    target 71
+    target 69
     distance 130434
     time 5908
   ]
   edge [
     source 21
-    target 94
+    target 92
     distance 80994
     time 3899
   ]
@@ -1501,7 +1567,7 @@ graph [
   ]
   edge [
     source 21
-    target 71
+    target 69
     distance 71805
     time 3265
   ]
@@ -1513,7 +1579,7 @@ graph [
   ]
   edge [
     source 22
-    target 34
+    target 32
     distance 146425
     time 5999
   ]
@@ -1525,31 +1591,31 @@ graph [
   ]
   edge [
     source 22
-    target 35
+    target 33
     distance 136903
     time 8565
   ]
   edge [
     source 22
-    target 33
+    target 31
     distance 124658
     time 5049
   ]
   edge [
     source 23
-    target 28
+    target 26
     distance 284503
     time 11012
   ]
   edge [
     source 23
-    target 29
+    target 27
     distance 162225
     time 9588
   ]
   edge [
     source 23
-    target 34
+    target 32
     distance 152057
     time 5883
   ]
@@ -1561,19 +1627,19 @@ graph [
   ]
   edge [
     source 23
-    target 33
+    target 31
     distance 130290
     time 4933
   ]
   edge [
     source 24
-    target 94
+    target 92
     distance 168039
     time 6721
   ]
   edge [
     source 24
-    target 29
+    target 27
     distance 103456
     time 6707
   ]
@@ -1585,911 +1651,901 @@ graph [
   ]
   edge [
     source 25
-    target 94
+    target 92
     distance 161756
     time 6332
   ]
   edge [
     source 25
-    target 29
+    target 27
     distance 162140
     time 8435
   ]
   edge [
     source 25
-    target 95
+    target 93
     distance 50677
     time 2376
   ]
   edge [
     source 26
     target 27
-  ]
-  edge [
-    source 28
-    target 29
     distance 88908
     time 4489
   ]
   edge [
-    source 28
-    target 30
+    source 26
+    target 28
     distance 151733
     time 9243
   ]
   edge [
-    source 28
-    target 32
+    source 26
+    target 30
     distance 139889
     time 5989
   ]
   edge [
-    source 28
-    target 31
+    source 26
+    target 29
     distance 192737
     time 7423
   ]
   edge [
-    source 28
-    target 33
+    source 26
+    target 31
     distance 173711
     time 7513
   ]
   edge [
-    source 30
-    target 31
+    source 28
+    target 29
     distance 149940
     time 5792
   ]
   edge [
-    source 31
-    target 32
+    source 29
+    target 30
     distance 65101
     time 2974
   ]
   edge [
-    source 31
-    target 33
+    source 29
+    target 31
     distance 167322
     time 6197
   ]
   edge [
-    source 32
-    target 34
+    source 30
+    target 32
     distance 123674
     time 5388
   ]
   edge [
-    source 32
-    target 33
+    source 30
+    target 31
     distance 103291
     time 4138
   ]
   edge [
-    source 33
-    target 34
+    source 31
+    target 32
     distance 45248
     time 2902
   ]
   edge [
-    source 34
-    target 36
+    source 32
+    target 34
     distance 55881
     time 3416
   ]
   edge [
-    source 34
-    target 35
+    source 32
+    target 33
     distance 144237
     time 8489
   ]
   edge [
-    source 36
-    target 37
+    source 34
+    target 35
     distance 151629
     time 5969
   ]
   edge [
-    source 37
-    target 38
+    source 35
+    target 36
     distance 117413
     time 4841
   ]
   edge [
-    source 39
-    target 40
+    source 37
+    target 38
     distance 52941
     time 2593
   ]
   edge [
-    source 39
-    target 41
+    source 37
+    target 39
     distance 62711
     time 4312
   ]
   edge [
-    source 40
-    target 43
+    source 38
+    target 41
     distance 158313
     time 6451
   ]
   edge [
-    source 41
-    target 43
+    source 39
+    target 41
     distance 125632
     time 5219
   ]
   edge [
-    source 41
-    target 42
+    source 39
+    target 40
     distance 61259
     time 2951
   ]
   edge [
-    source 41
-    target 93
+    source 39
+    target 91
     distance 120566
     time 5031
   ]
   edge [
-    source 42
-    target 43
+    source 40
+    target 41
     distance 133601
     time 6612
   ]
   edge [
-    source 42
-    target 92
+    source 40
+    target 90
     distance 99779
     time 6281
   ]
   edge [
-    source 42
-    target 93
+    source 40
+    target 91
     distance 81436
     time 5147
   ]
   edge [
-    source 42
-    target 45
+    source 40
+    target 43
     distance 143625
     time 6087
   ]
   edge [
-    source 42
-    target 44
+    source 40
+    target 42
     distance 53692
     time 2916
   ]
   edge [
-    source 43
-    target 58
+    source 41
+    target 56
     distance 110664
     time 5629
   ]
   edge [
-    source 43
-    target 59
+    source 41
+    target 57
     distance 112816
     time 4851
   ]
   edge [
-    source 43
-    target 45
+    source 41
+    target 43
     distance 169647
     time 7287
   ]
   edge [
-    source 44
-    target 92
+    source 42
+    target 90
     distance 82936
     time 4680
   ]
   edge [
-    source 44
-    target 45
+    source 42
+    target 43
     distance 90957
     time 4807
   ]
   edge [
-    source 44
-    target 46
+    source 42
+    target 44
     distance 32424
     time 2887
   ]
   edge [
-    source 44
-    target 54
+    source 42
+    target 52
     distance 31934
     time 2010
   ]
   edge [
-    source 44
-    target 55
+    source 42
+    target 53
     distance 35590
     time 2074
   ]
   edge [
-    source 45
-    target 60
+    source 43
+    target 58
     distance 123801
     time 4947
   ]
   edge [
-    source 45
-    target 49
+    source 43
+    target 47
     distance 149539
     time 5998
   ]
   edge [
-    source 45
-    target 59
+    source 43
+    target 57
     distance 150599
     time 7362
   ]
   edge [
-    source 45
-    target 68
+    source 43
+    target 66
     distance 140564
     time 5332
   ]
   edge [
-    source 45
-    target 47
+    source 43
+    target 45
     distance 24908
     time 1439
   ]
   edge [
-    source 45
-    target 55
+    source 43
+    target 53
     distance 56709
     time 3150
   ]
   edge [
-    source 45
-    target 57
+    source 43
+    target 55
     distance 36705
     time 2611
   ]
   edge [
-    source 46
-    target 92
+    source 44
+    target 90
     distance 86312
     time 4038
   ]
   edge [
-    source 46
-    target 48
+    source 44
+    target 46
     distance 75391
     time 4229
   ]
   edge [
-    source 46
-    target 47
+    source 44
+    target 45
     distance 40328
     time 2292
   ]
   edge [
-    source 46
-    target 54
+    source 44
+    target 52
     distance 15386
     time 1635
   ]
   edge [
-    source 47
-    target 48
+    source 45
+    target 46
     distance 82175
     time 3771
   ]
   edge [
-    source 47
-    target 49
+    source 45
+    target 47
     distance 123761
     time 4808
   ]
   edge [
-    source 47
-    target 54
+    source 45
+    target 52
     distance 52805
     time 3066
   ]
   edge [
-    source 47
-    target 57
+    source 45
+    target 55
     distance 36359
     time 2001
   ]
   edge [
-    source 48
-    target 92
+    source 46
+    target 90
     distance 83854
     time 4764
   ]
   edge [
-    source 48
-    target 50
+    source 46
+    target 48
     distance 130502
     time 5924
   ]
   edge [
-    source 48
-    target 49
+    source 46
+    target 47
     distance 77563
     time 4637
   ]
   edge [
-    source 48
-    target 91
+    source 46
+    target 89
     distance 168869
     time 6319
   ]
   edge [
-    source 48
-    target 84
+    source 46
+    target 82
     distance 127612
     time 5159
   ]
   edge [
-    source 49
-    target 51
+    source 47
+    target 49
     distance 123282
     time 4963
   ]
   edge [
-    source 49
-    target 50
+    source 47
+    target 48
     distance 63319
     time 3118
   ]
   edge [
-    source 49
-    target 70
+    source 47
+    target 68
     distance 166277
     time 7701
   ]
   edge [
-    source 49
-    target 68
+    source 47
+    target 66
     distance 169776
     time 6284
   ]
   edge [
-    source 50
-    target 51
+    source 48
+    target 49
     distance 114737
     time 5296
   ]
   edge [
-    source 50
-    target 53
+    source 48
+    target 51
     distance 102216
     time 5776
   ]
   edge [
-    source 50
-    target 52
+    source 48
+    target 50
     distance 65765
     time 2702
   ]
   edge [
-    source 50
-    target 84
+    source 48
+    target 82
     distance 141444
     time 5666
   ]
   edge [
-    source 51
-    target 53
+    source 49
+    target 51
     distance 66166
     time 4356
   ]
   edge [
-    source 51
-    target 70
+    source 49
+    target 68
     distance 66808
     time 3958
   ]
   edge [
-    source 52
-    target 53
+    source 50
+    target 51
     distance 140766
     time 6350
   ]
   edge [
-    source 52
-    target 83
+    source 50
+    target 81
     distance 132624
     time 4869
   ]
   edge [
-    source 52
-    target 84
+    source 50
+    target 82
     distance 97685
     time 4161
   ]
   edge [
-    source 52
-    target 88
+    source 50
+    target 86
     distance 102494
     time 4390
   ]
   edge [
-    source 53
-    target 88
+    source 51
+    target 86
     distance 124584
     time 6926
   ]
   edge [
-    source 54
-    target 56
+    source 52
+    target 54
     distance 12988
     time 2211
   ]
   edge [
-    source 54
-    target 55
+    source 52
+    target 53
     distance 23847
     time 1485
   ]
   edge [
-    source 54
-    target 57
+    source 52
+    target 55
     distance 42910
     time 2563
   ]
   edge [
-    source 55
-    target 56
+    source 53
+    target 54
     distance 19184
     time 1804
   ]
   edge [
-    source 55
-    target 57
+    source 53
+    target 55
     distance 20600
     time 1520
   ]
   edge [
-    source 56
-    target 57
+    source 54
+    target 55
     distance 14560
     time 1322
   ]
   edge [
-    source 58
-    target 59
+    source 56
+    target 57
     distance 127634
     time 5315
   ]
   edge [
-    source 58
-    target 62
+    source 56
+    target 60
     distance 149990
     time 7579
   ]
   edge [
-    source 59
-    target 60
+    source 57
+    target 58
     distance 85967
     time 3810
   ]
   edge [
-    source 59
-    target 61
+    source 57
+    target 59
     distance 172176
     time 6163
   ]
   edge [
-    source 59
-    target 62
+    source 57
+    target 60
     distance 71475
     time 3924
   ]
   edge [
-    source 60
-    target 69
+    source 58
+    target 67
     distance 188813
     time 6927
   ]
   edge [
-    source 60
-    target 61
+    source 58
+    target 59
     distance 102887
     time 4082
   ]
   edge [
-    source 60
-    target 68
+    source 58
+    target 66
     distance 77720
     time 4997
   ]
   edge [
-    source 61
-    target 69
+    source 59
+    target 67
     distance 109125
     time 4448
   ]
   edge [
-    source 61
-    target 62
+    source 59
+    target 60
     distance 97039
     time 4722
   ]
   edge [
-    source 61
-    target 72
+    source 59
+    target 70
     distance 110430
     time 6199
   ]
   edge [
-    source 61
-    target 65
+    source 59
+    target 63
     distance 125605
     time 5930
   ]
   edge [
-    source 62
-    target 63
+    source 60
+    target 61
     distance 85622
     time 4411
   ]
   edge [
-    source 62
-    target 65
+    source 60
+    target 63
     distance 152197
     time 6296
   ]
   edge [
-    source 63
-    target 64
+    source 61
+    target 62
     distance 58536
     time 2944
   ]
   edge [
-    source 63
-    target 65
+    source 61
+    target 63
     distance 72174
     time 3225
   ]
   edge [
-    source 64
-    target 66
+    source 62
+    target 64
     distance 162084
     time 6132
   ]
   edge [
-    source 65
-    target 66
+    source 63
+    target 64
     distance 131937
     time 7755
   ]
   edge [
-    source 65
-    target 67
+    source 63
+    target 65
     distance 90577
     time 6132
   ]
   edge [
-    source 65
-    target 72
+    source 63
+    target 70
     distance 89313
     time 4161
   ]
   edge [
-    source 66
-    target 67
+    source 64
+    target 65
     distance 79778
     time 3710
   ]
   edge [
-    source 67
-    target 73
+    source 65
+    target 71
     distance 74623
     time 3644
   ]
   edge [
-    source 68
-    target 69
+    source 66
+    target 67
     distance 149955
     time 5808
   ]
   edge [
-    source 68
-    target 70
+    source 66
+    target 68
     distance 117914
     time 6279
   ]
   edge [
-    source 69
-    target 75
+    source 67
+    target 73
     distance 95740
     time 4145
   ]
   edge [
-    source 69
-    target 70
+    source 67
+    target 68
     distance 180032
     time 9458
   ]
   edge [
-    source 69
-    target 72
+    source 67
+    target 70
     distance 132170
     time 5645
   ]
   edge [
-    source 69
-    target 71
+    source 67
+    target 69
     distance 125939
     time 5044
   ]
   edge [
-    source 70
-    target 71
+    source 68
+    target 69
     distance 178063
     time 8644
   ]
   edge [
-    source 71
-    target 94
+    source 69
+    target 92
     distance 36282
     time 2175
   ]
   edge [
-    source 71
-    target 75
+    source 69
+    target 73
     distance 102943
     time 4313
   ]
   edge [
-    source 72
-    target 74
+    source 70
+    target 72
     distance 49778
     time 3122
   ]
   edge [
-    source 72
-    target 75
+    source 70
+    target 73
     distance 153580
     time 6209
   ]
   edge [
-    source 72
-    target 73
+    source 70
+    target 71
     distance 71567
     time 3533
   ]
   edge [
-    source 73
-    target 74
+    source 71
+    target 72
     distance 92555
     time 4242
   ]
   edge [
-    source 74
-    target 75
+    source 72
+    target 73
     distance 84293
     time 4637
   ]
   edge [
-    source 75
-    target 94
+    source 73
+    target 92
     distance 73298
     time 3607
   ]
   edge [
-    source 76
-    target 77
+    source 74
+    target 75
     distance 153443
     time 6756
   ]
   edge [
-    source 76
-    target 78
+    source 74
+    target 76
     distance 121245
     time 4772
   ]
   edge [
-    source 77
-    target 79
+    source 75
+    target 77
     distance 98444
     time 4191
   ]
   edge [
-    source 77
-    target 78
+    source 75
+    target 76
     distance 117075
     time 5712
   ]
   edge [
-    source 78
-    target 79
+    source 76
+    target 77
     distance 113896
     time 5133
   ]
   edge [
-    source 78
-    target 80
+    source 76
+    target 78
     distance 112879
     time 4865
   ]
   edge [
-    source 79
-    target 80
+    source 77
+    target 78
     distance 106221
     time 5127
   ]
   edge [
-    source 79
-    target 89
+    source 77
+    target 87
     distance 148609
     time 5988
   ]
   edge [
-    source 79
-    target 82
+    source 77
+    target 80
     distance 73779
     time 3615
   ]
   edge [
-    source 80
-    target 83
+    source 78
+    target 81
     distance 90620
     time 3809
   ]
   edge [
-    source 80
-    target 82
+    source 78
+    target 80
     distance 133358
     time 7018
   ]
   edge [
-    source 80
-    target 81
+    source 78
+    target 79
     distance 69258
     time 3347
   ]
   edge [
-    source 81
-    target 86
+    source 79
+    target 84
     distance 84198
     time 4547
   ]
   edge [
-    source 81
-    target 83
+    source 79
+    target 81
     distance 132202
     time 4916
   ]
   edge [
-    source 81
-    target 85
+    source 79
+    target 83
     distance 89862
     time 3869
   ]
   edge [
-    source 82
-    target 83
+    source 80
+    target 81
     distance 81396
     time 4362
   ]
   edge [
-    source 82
-    target 89
+    source 80
+    target 87
     distance 165439
     time 7166
   ]
   edge [
-    source 82
-    target 91
+    source 80
+    target 89
     distance 127210
     time 4733
   ]
   edge [
-    source 82
-    target 84
+    source 80
+    target 82
     distance 87095
     time 3628
   ]
   edge [
-    source 83
-    target 84
+    source 81
+    target 82
     distance 95382
     time 3940
   ]
   edge [
-    source 83
-    target 85
+    source 81
+    target 83
     distance 192569
     time 7281
   ]
   edge [
-    source 83
-    target 88
+    source 81
+    target 86
     distance 137288
     time 7458
   ]
   edge [
-    source 84
-    target 91
+    source 82
+    target 89
     distance 53684
     time 2505
   ]
   edge [
-    source 85
-    target 87
+    source 83
+    target 85
     distance 115399
     time 5935
   ]
   edge [
-    source 85
-    target 86
+    source 83
+    target 84
     distance 62927
     time 3307
   ]
   edge [
-    source 85
-    target 88
+    source 83
+    target 86
     distance 77366
     time 3523
   ]
   edge [
-    source 86
-    target 87
+    source 84
+    target 85
     distance 146213
     time 6762
   ]
   edge [
-    source 87
-    target 88
+    source 85
+    target 86
     distance 113632
     time 5109
   ]
   edge [
-    source 88
-    target 88
+    source 86
+    target 86
     distance 0
     time 0
   ]
   edge [
-    source 89
-    target 90
+    source 87
+    target 88
     distance 60989
     time 3097
   ]
   edge [
-    source 89
-    target 91
+    source 87
+    target 89
     distance 177064
     time 6490
   ]
   edge [
-    source 90
-    target 92
+    source 88
+    target 90
     distance 160163
     time 6202
   ]
   edge [
-    source 90
-    target 91
+    source 88
+    target 89
     distance 116432
     time 4502
   ]
   edge [
-    source 91
-    target 92
+    source 89
+    target 90
     distance 113915
     time 5786
   ]
   edge [
-    source 92
-    target 95
-    distance 651337
-    time 22510
-  ]
-  edge [
-    source 92
-    target 93
+    source 90
+    target 91
     distance 56587
     time 2882
   ]
