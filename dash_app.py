@@ -492,14 +492,18 @@ def select_tab(tab):
 
 
 @app.callback(
-    Output("collapse", "is_open"),
+    [Output("collapse", "is_open"), Output("collapse-button", "children")],
     [Input("collapse-button", "n_clicks")],
     [State("collapse", "is_open")],
 )
 def toggle_collapse(n, is_open):
     if n:
-        return not is_open
-    return is_open
+        new_val = not is_open
+        new_text = "Show Help" if not new_val else "Hide Help"
+        return new_val, new_text
+    new_val = is_open
+    new_text = "Show Help" if not new_val else "Hide Help"
+    return is_open, new_text
 
 @server.route('/favicon.ico')
 def favicon():
