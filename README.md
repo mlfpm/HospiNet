@@ -1,5 +1,24 @@
+## Authors
+Bowen Fan, ETH Zürich, Switzerland, bowen.fan@bsse.ethz.ch
+
+Ndèye Maguette Mbaye, ARMINES/Mines ParisTech, France,  ndeye-maguette.mbaye@mines-paristech.fr
+
+Lucas Miranda,  Max Planck Institute of Psychiatry, Germany,  lucas_miranda@psych.mpg.de
+
+Giulia Muzio, ETH Zürich, Switzerland,  giulia.muzio@bsse.ethz.ch
+
+Emese Sukei,  Universidad Carlos III de Madrid, Spain,  esukei@ing.uc3m.es
+
+Giovanni Visonà,  Max Planck Institute for Intelligent Systems, Germany,  giovanni.visona@tuebingen.mpg.de
+
+
+Authors are ESRs in MLFPM project https://mlfpm.eu/
+
+
+
 # HospiNet
 Hospital Network Simulations in France
+
 
 ## Background
 Our project is named HospiNet. With Hospinet we aim to simulate the French hospitals’ load under this COVID-19 emergency. 
