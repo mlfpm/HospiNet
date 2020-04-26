@@ -3,12 +3,17 @@ Hospital Network Simulations in France
 
 @authors
 
-Bowen Fan ETH Zürich, Switzerland bowen.fan@bsse.ethz.ch
-Ndèye Maguette Mbaye  ARMINES/Mines ParisTech, France                        ndeye-maguette.mbaye@mines-paristech.fr
-Lucas Miranda         Max Planck Institute of Psychiatry, Germany            lucas_miranda@psych.mpg.de
-Giulia Muzio,         ETH Zürich, Switzerland,                               giulia.muzio@bsse.ethz.ch
-Emese Sukei,          Universidad Carlos III de Madrid, Spain              	 esukei@ing.uc3m.es
-Giovanni Visonà       Max Planck Institute for Intelligent Systems, Germany
+Bowen Fan, ETH Zürich, Switzerland, bowen.fan@bsse.ethz.ch
+
+Ndèye Maguette Mbaye, ARMINES/Mines ParisTech, France,  ndeye-maguette.mbaye@mines-paristech.fr
+
+Lucas Miranda,  Max Planck Institute of Psychiatry, Germany,  lucas_miranda@psych.mpg.de
+
+Giulia Muzio, ETH Zürich, Switzerland,  giulia.muzio@bsse.ethz.ch
+
+Emese Sukei,  Universidad Carlos III de Madrid, Spain,  esukei@ing.uc3m.es
+
+Giovanni Visonà,  Max Planck Institute for Intelligent Systems, Germany,
 
 
 ## Background
