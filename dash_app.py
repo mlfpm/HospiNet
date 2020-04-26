@@ -52,7 +52,7 @@ app.layout = html.Div(
 
                         html.H1("HospiNet"),
                         html.P(
-                            """Simulate the load on the french hospital network. The 'Simulate' button allows you to 
+                            """Simulate the load caused by the SARS-CoV-2 pandemic on the french hospital network. The 'Simulate' button allows you to 
                             display the behaviour of the network with the selected parameters. 
                             """
                         ),
