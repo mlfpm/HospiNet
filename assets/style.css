@@ -645,6 +645,20 @@ input[type="number"] {
   height: 45px;
 }
 
+
+
+.tab{
+  background-color: #454545 !important;
+  color: #ccc !important;
+  border: none !important;
+}
+
+
+.tab--selected  {
+  background-color: #232323 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
 /* LOADING DIV*/
 @keyframes fadein {
   0% {
