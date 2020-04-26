@@ -13,7 +13,11 @@ Giulia Muzio, ETH Zürich, Switzerland,  giulia.muzio@bsse.ethz.ch
 
 Emese Sukei,  Universidad Carlos III de Madrid, Spain,  esukei@ing.uc3m.es
 
-Giovanni Visonà,  Max Planck Institute for Intelligent Systems, Germany,
+Giovanni Visonà,  Max Planck Institute for Intelligent Systems, Germany,  giovanni.visona@tuebingen.mpg.de
+
+
+Authors are ESRs in MLFPM project https://mlfpm.eu/
+
 
 
 ## Background
