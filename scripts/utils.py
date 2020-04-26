@@ -23,10 +23,79 @@ paths_dict = {
     "time_series_path": os.path.abspath(
         os.path.join("data", "France_Hospital_data", "date_dep.csv")
     ),
+    "bed_info_path": os.path.abspath(
+        os.path.join("data", "raw_data", "bed_per_dep.pkl")
+    ),
 }
 
 
-def start_simulation(max_dist_dict, cap_thresh_dict):
+def on_submit_call(max_dist_dict: dict, cap_thresh_dict: dict, simulation: bool):
+    """
+        Method called on Submit button press. It computes the simulation or just
+        the evolution of data over time based on the value of the ´simulation´
+        argument.
+        Args:
+            max_dist_dict (dictionary) - the maximum distances to transfer patients to
+            cap_thresh_dict (dictionary) - the capacity threshold for each department
+            simulation (bool) - flag for running the simulation
+        Returns:
+            time_df (DataFrame) - a dataframe containing the occupancy rate and
+                patient count over time for each department
+    """
+    if simulation:
+        time_df = set_up_simulation(max_dist_dict, cap_thresh_dict)
+    else:
+        time_df = occupancy_rate_over_time()
+    return time_df
+
+
+def occupancy_rate_over_time():
+    """
+        Method to compute the occupancy rate over time if the simulation is not
+        activated.
+        Returns:
+             output (DataFrame) - containing the daily stats for all the departments
+    """
+    # Read time series data
+    df = pd.read_csv(paths_dict["time_series_path"])
+
+    # Load distances and times
+    with open(paths_dict["bed_info_path"], "rb") as handle:
+        bed_info = pickle.load(handle)
+
+    # Set date to datetime type
+    df["jour"] = pd.to_datetime(df["jour"], format="%Y/%m/%d")
+    df["dep"] = df["dep"].str.zfill(2)
+
+    # Dictionary to store the results
+    output = {}
+
+    # For each time point
+    for date in df["jour"].sort_values().unique():
+        temp = {}
+        time_series_df = df[df["jour"] == date]
+        # For each department
+        for idx, row in time_series_df.iterrows():
+            # Get occupancy and patient count in that time step
+            temp[row.dep] = {
+                "n_patients": {"icu": row.rea, "acute": row.hosp - row.rea},
+                "occupancy%": {
+                    "total": (
+                        row.hosp
+                        / (bed_info[row.dep]["icu"] + bed_info[row.dep]["acute"])
+                    )
+                    * 100.0,
+                    "icu": (row.rea / bed_info[row.dep]["icu"]) * 100.0,
+                    "acute": ((row.hosp - row.rea) / bed_info[row.dep]["acute"])
+                    * 100.0,
+                },
+            }
+        output[np.datetime_as_string(date, unit="D")] = temp
+
+    return dict_to_df(output)
+
+
+def set_up_simulation(max_dist_dict, cap_thresh_dict):
     """
         Method to run a simulation with a given parameter setting.
         To be called from the event-handler of the interface.
@@ -70,7 +139,7 @@ def run_simulation(df, G, return_counts=True):
             return_counts (bool) - flag to indicate whether to return
                 the patient counts too or only the occupancy percentages
         Returns:
-            output (dictionary) - the occupancy level by day for each department
+            output (DataFrame) - the occupancy level by day for each department
     """
     # Set date to datetime type
     df["jour"] = pd.to_datetime(df["jour"], format="%Y/%m/%d")
@@ -90,6 +159,18 @@ def run_simulation(df, G, return_counts=True):
 
         output[np.datetime_as_string(date, unit="D")] = network_state
 
+    return dict_to_df(output)
+
+
+def dict_to_df(output):
+    """
+        Method to transform the output dictionary of the time series information into
+        a pandas DataFrame
+        Args:
+            output (dictionary) - the occupancy level by day for each department
+        Returns:
+            output (DataFrame) -  the dictionary transformed into a dataframe
+    """
     result_dict = {
         "Date": [],
         "dep": [],
@@ -113,19 +194,13 @@ def run_simulation(df, G, return_counts=True):
     return pd.DataFrame(result_dict)
 
 
-def animate_graph(
-    max_dist_dict: dict, cap_thresh_dict: dict, animate: str, style="carto-positron",
-):
+def animate_graph(time_df, animate: str, style="carto-positron"):
     """
     Method to plot an animated simulation using a given data-set using a predefined network.
-    Args:
-        max_dist_dict (dictionary) - the maximum distances to transfer patients to
-        cap_thresh_dict (dictionary) - the capacity threshold for each department
+        time_df (DataFrame) - the output of the ´on_submit_call´ method
         animate (string) - the name of the variable to animate in the resulting plot.
-
             Should be one of ["total_occupancy","icu_occupancy","acute_occupancy",
             "icu_patients","acute_patients"]
-
         style (string, optional) - style that ploly should use to render the map.
 
             Should be one of ['open-street-map','white-bg','carto-positron',
@@ -140,8 +215,6 @@ def animate_graph(
     with open(paths_dict["fullgraph_path"], "rb") as handle:
         G = pickle.load(handle)
 
-    timedata = start_simulation(max_dist_dict, cap_thresh_dict)
-
     df = {"dep": [], "name": [], "lat": [], "lon": [], "icu": []}
     for node in G.nodes():
         df["dep"].append(node)
@@ -151,7 +224,7 @@ def animate_graph(
         df["icu"].append(G.nodes[node]["icu"])
 
     df = pd.DataFrame(df)
-    df = pd.merge(df, timedata, how="outer").fillna(10)
+    df = pd.merge(df, time_df, how="outer").fillna(10)
     df["Date"] = pd.to_datetime(df.Date.astype(str)).astype(str)
     df.sort_values(["Date", "lat", "lon"], inplace=True)
 
@@ -200,4 +273,21 @@ def animate_graph(
         transition={"duration": 1, "easing": "linear"},
     )
 
+    return fig
+
+
+def plot_occupancy_evolution(time_df, what_to_plot, department_label):
+    """
+    Method to plot the evolution of a given parameter for a given department.
+        time_df (DataFrame) - the output of the ´on_submit_call´ method
+        what_to_plot (string) - the name of the variable to show in the resulting plot.
+            Should be one of ["total_occupancy","icu_occupancy","acute_occupancy",
+            "icu_patients","acute_patients"]
+        department_label (string) - the label of the department for which to plot the
+            graph
+    Returns:
+        fig (plotly figure) - the graph
+    """
+    df = time_df[time_df["dep"] == department_label]
+    fig = px.line(df, x="Date", y=what_to_plot)
     return fig
