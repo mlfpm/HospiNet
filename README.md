@@ -2,12 +2,11 @@
 Hospital Network Simulations in France
 
 ## Background
-Our project is named HospiNet. With Hospinet we aim to simulate the French hospitals’ load under this covid-19 emergency. 
+Our project is named HospiNet. With Hospinet we aim to simulate the French hospitals’ load under this COVID-19 emergency. 
 
 Useful links: https://hospinet.herokuapp.com/
 
-In our approach, France is represented as a graph: each node is the prefecture of each French department, and two nodes are connected through an edge in case the corresponding departments geographically border.
-In our simulations, we consider two scenarios. In the first one, we allow the movement of patients from a hospital to another one. Specifically, we model the movement if the ‘origin’ hospital is overloaded, namely the number of occupied beds is higher than a predefined load threshold. Instead, the ‘arrival’ hospital has a load which permits it to receive these patients. The second scenario, instead, does include the patients’ move just described.
+In our simulations, we consider two scenarios. The first scenario simply shows current statistics. These are the incoming patients in acute and icu care, patients coming into a hospital, stay in that hospital. In the second one, we allow the movement of patients from one hospital to another. Moving patients happens when a hospital reaches a threshold capacity. Target hospitals will only accept patients when they are under their own threshold capacity. Targets are selected within a predefined radius, in order of closest to furthest.
 
 ## Usage
 _Data_Processing.ipynb_
