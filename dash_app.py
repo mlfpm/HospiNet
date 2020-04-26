@@ -23,6 +23,7 @@ from dash.dependencies import Output, Input, State
 
 from scripts.utils import animate_graph, plot_occupancy_evolution, on_submit_call
 
+time_df = pd.DataFrame()
 
 app = dash.Dash(__name__)
 app.title = "HospiNet"
@@ -132,9 +133,13 @@ app.layout = html.Div(
                 html.Div(
                     className="eight columns div-for-charts bg-grey",
                     children=[
-                        html.Div(id='graph_div', style={"height": "70%"}),
-                        html.Div(
-                            className="text-padding",
+                        dcc.Tabs(id='tabs-selector', value='ng', children=[
+                            dcc.Tab(label='Network Graph', value='ng'),
+                            dcc.Tab(label='Occupancy', value='occupancy'),
+                        ]),
+                        html.Div(id='graph_div', style={"height": "100%"}),
+                        html.Div(id="occupancy_tab",
+                            #className="text-padding",
                             children=[
                                 "Show hospital occupancy for the current simulation.    ",
                                 dcc.Dropdown(
@@ -329,10 +334,11 @@ app.layout = html.Div(
                                     ],
                                     value='75',
                                     clearable=False
-                                )
+                                ),
+                                html.Div(id='occupancy_div', style={"height": "90%"}),
                             ],
                         ),
-                        html.Div(id='occupancy_div'),
+                        
                     ],
                 ),
             ],
@@ -359,12 +365,33 @@ def toggle_form(checkbox_value):
                State('distance_acute_threshold', 'value'),
                State('distance_icu_threshold', 'value')])
 def simulate(clicks, propagation_bool, animate_value, department_code, capacity_acute, capacity_icu, distance_acute, distance_icu):
+    global time_df
     max_dist_dict = {"icu": distance_icu, "acute": distance_acute}
     cap_thresh_dict = {"icu": float(capacity_icu)/100, "acute": float(capacity_acute)/100}
     time_df = on_submit_call(max_dist_dict, cap_thresh_dict, propagation_bool)
     network_figure = animate_graph(time_df, animate_value, style="carto-positron")
     occupancy_figure = plot_occupancy_evolution(time_df, animate_value, str(department_code))
-    return dcc.Graph(figure=network_figure, style={"width": "100%"}), dcc.Graph(figure=occupancy_figure, style={"width": "100%"})
+    return dcc.Graph(figure=network_figure, style={"width": "100%", "height":"100%"}), dcc.Graph(figure=occupancy_figure, style={"width": "100%", "height":"100%"})
+
+
+# @app.callback([Output('occupancy_div', 'children')],
+#               [Input('department-dropdown', 'value')],
+#               [State('animate-dropdown', 'value')])
+# def change_department(department_code, animate_value):
+#     global time_df
+#     occupancy_figure = plot_occupancy_evolution(time_df, animate_value, str(department_code))
+#     return dcc.Graph(figure=occupancy_figure, style={"width": "100%"})
+
+
+
+@app.callback([Output('graph_div', 'style'), Output('occupancy_tab', 'style')],
+              [Input('tabs-selector', 'value')])
+def select_tab(tab):
+    if tab == 'ng':
+        return ({'display': 'block', "height": "100%"}, {'display': 'none'})
+    elif tab == 'occupancy':
+        return ({'display': 'none'}, {'display': 'block', "height": "100%"})
+    return ({'display': 'block'}, {'display': 'none'})
 
 # @app.callback(Output('occupancy_div', 'children'),
 #               [Input('submit-val', 'n_clicks'),
