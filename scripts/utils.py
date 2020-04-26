@@ -253,7 +253,7 @@ def animate_graph(time_df, animate: str, style="carto-positron"):
         size_max=55,
         zoom=5,
         opacity=0.6,
-        hover_name="dep",
+        hover_name="name",
         # width=800,
         # height=800,
     )
