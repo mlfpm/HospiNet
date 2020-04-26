@@ -73,7 +73,8 @@ app.layout = html.Div(
                         ),
                         html.Div(
                             className="div-for-dropdown",
-                            children=[
+                            children=[html.Label(
+                                        'Percentage To Show'),
                                 dcc.Dropdown(
                                     id='animate-dropdown',
                                     options=[
@@ -83,6 +84,8 @@ app.layout = html.Div(
                                             "value": "icu_occupancy"},
                                         {"label": "Acute Occupancy",
                                             "value": "acute_occupancy"},
+                                        {"label": "Total Patients",
+                                            "value": "total_patients"},                                            
                                         {"label": "ICU Patients",
                                             "value": "icu_patients"},
                                         {"label": "Acute Patients",
@@ -96,17 +99,28 @@ app.layout = html.Div(
                         html.Div(id='form_div',
                                  className="div-for-dropdown",
                                  children=[
-                                     html.Label(
-                                         'Capacity Acute Threshold (%)'),
-                                     dcc.Input(
-                                         id="capacity_acute_threshold", type="number", value=75,
-                                         min=1, max=100, step=1
-                                     ),
-                                     html.Label('Capacity ICU Threshold (%)'),
-                                     dcc.Input(
-                                         id="capacity_icu_threshold", type="number", value=75,
-                                         min=1, max=100, step=1
-                                     ),
+                                     html.H3("HospiNet"),
+                                    html.Div(className="flex-row",
+                                    children=[html.Label(
+                                         'Capacity (%)'),
+                                        html.Div(className="input-with-label",
+                                        children=[
+                                             html.Label(
+                                            'Acute'),
+                                            dcc.Input(
+                                                id="capacity_acute_threshold", type="number", value=75,
+                                                min=1, max=100, step=1
+                                        )
+                                        ]),
+                                        html.Div(className="input-with-label",
+                                        children=[
+                                            html.Label('ICU'),
+                                        dcc.Input(
+                                            id="capacity_icu_threshold", type="number", value=75,
+                                            min=1, max=100, step=1
+                                        )
+                                        ])
+                                    ]),
                                      html.Label(
                                          'Max Distance Acute Threshold (km)'),
                                      dcc.Input(

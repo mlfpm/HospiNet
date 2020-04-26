@@ -177,10 +177,10 @@ def dict_to_df(output):
         "total_occupancy": [],
         "icu_occupancy": [],
         "acute_occupancy": [],
+        "total_patients": [],
         "icu_patients": [],
         "acute_patients": [],
     }
-
     for Date, val in output.items():
         for node in val:
             result_dict["Date"].append(Date)
@@ -188,9 +188,9 @@ def dict_to_df(output):
             result_dict["total_occupancy"].append(val[node]["occupancy%"]["total"])
             result_dict["icu_occupancy"].append(val[node]["occupancy%"]["icu"])
             result_dict["acute_occupancy"].append(val[node]["occupancy%"]["acute"])
+            result_dict["total_patients"].append(val[node]["n_patients"]["icu"] + val[node]["n_patients"]["acute"])
             result_dict["icu_patients"].append(val[node]["n_patients"]["icu"])
             result_dict["acute_patients"].append(val[node]["n_patients"]["acute"])
-
     return pd.DataFrame(result_dict)
 
 

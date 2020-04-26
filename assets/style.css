@@ -604,7 +604,18 @@ a {
   padding: unset;  
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
 
+.input-with-label {
+  display: inline-flex;
+  flex-direction: column;
+}
 
 .checkboxes:hover {
   color: #0FA0CE;
