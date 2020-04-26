@@ -1,8 +1,42 @@
-import copy
+import os
 import numpy as np
 import pandas as pd
 
 from src.classes import HospiGraph
+
+
+def start_simulation(max_dist_dict, cap_thresh_dict):
+    """
+        Method to run a simulation with a given parameter setting.
+        To be called from the event-handler of the interface.
+        Args:
+            max_dist_dict (dictionary) - the maximum distances to transfer patients to
+            cap_thresh_dict (dictionary) - the capacity threshold for each department
+        Returns:
+            network_state (dictionary) - the occupancy level by day for each department
+    """
+    # Initialise hparams
+    hparams = {
+        "graph_path": os.path.abspath(os.path.join("processed_data", "connectivity.pkl")),
+        "dist_path": os.path.abspath(os.path.join("processed_data", "distances_times.pkl")),
+        "attr_path": os.path.abspath(os.path.join("processed_data", "departments.pkl")),
+        "init_n_patients": {"icu": 0, "acute": 0},
+        "init_prev_count": {"icu": 0, "acute": 0},
+        "max_distance": max_dist_dict,
+        "capacity_thresh": cap_thresh_dict,
+        "time_series_path": os.path.abspath(os.path.join("France_Hospital_data", "date_dep.csv")),
+    }
+
+    # Initialise network
+    G = HospiGraph(hparams)
+
+    # Read time series data
+    df = pd.read_csv(hparams["time_series_path"])
+
+    # Run the simulation
+    network_state = run_simulation(df, G)
+
+    return network_state
 
 
 def run_simulation(df, G, return_counts=True):
@@ -13,7 +47,10 @@ def run_simulation(df, G, return_counts=True):
                 ['jour', 'dep', 'hosp', 'rea', 'rad', 'dc']
                 (comes from /France_Hospital_data/date_dep.csv)
             G (HospiGraph) - an initialised HospiGraph object
-            return_counts
+            return_counts (bool) - flag to indicate whether to return
+                the patient counts too or only the occupancy percentages
+        Returns:
+            output (dictionary) - the occupancy level by day for each department
     """
     # Set date to datetime type
     df["jour"] = pd.to_datetime(df["jour"], format="%Y/%m/%d")
@@ -33,29 +70,3 @@ def run_simulation(df, G, return_counts=True):
 
         output[np.datetime_as_string(date, unit="D")] = network_state
     return output
-
-
-def start_simulation(max_dist_dict, cap_thresh_dict):
-    # Initialise hparams
-    n_nodes = 96
-    hparams = {
-        "graph_path": "../processed_data/connectivity.pkl",
-        "dist_path": "../processed_data/distances_times.pkl",
-        "attr_path": "../processed_data/departments.pkl",
-        "init_n_patients": {"icu": 0, "acute": 0},
-        "init_prev_count": {"icu": 0, "acute": 0},
-        "max_distance": max_dist_dict,
-        "capacity_thresh": cap_thresh_dict,
-        "time_series_path": "../France_Hospital_data/date_dep.csv",
-    }
-
-    # Initialise network
-    G = HospiGraph(hparams)
-
-    # Read time series data
-    df = pd.read_csv(hparams["time_series_path"])
-
-    # Run the simulation
-    network_state = run_simulation(df, G)
-
-    return network_state
