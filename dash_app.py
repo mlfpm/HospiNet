@@ -67,8 +67,8 @@ app.layout = html.Div(
                         ),
                         html.P(
                             """
-                            The tabs at the top of the graphs allow you to switch between the global network graph animation and the evolution of the occupancy for each
-                            individual department. 
+                            The tabs at the top of the graphs allow you to switch between the global network graph animation and the visualization
+                            of the evolution for a specific department. 
                             """
                         ),
                         html.P(
@@ -185,7 +185,7 @@ app.layout = html.Div(
                     children=[
                         dcc.Tabs(id='tabs-selector', value='ng', children=[
                             dcc.Tab(label='Network Graph', value='ng'),
-                            dcc.Tab(label='Occupancy', value='occupancy'),
+                            dcc.Tab(label='Department Details', value='occupancy'),
                         ]),
                         html.Div(id='graph_div', style={"height": "100%"}),
                         html.Div(id="occupancy_tab",
