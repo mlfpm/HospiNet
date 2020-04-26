@@ -1,8 +1,4 @@
-# HospiNet
-Hospital Network Simulations in France
-
-@authors
-
+## Authors
 Bowen Fan, ETH Zürich, Switzerland, bowen.fan@bsse.ethz.ch
 
 Ndèye Maguette Mbaye, ARMINES/Mines ParisTech, France,  ndeye-maguette.mbaye@mines-paristech.fr
@@ -18,6 +14,10 @@ Giovanni Visonà,  Max Planck Institute for Intelligent Systems, Germany,  giova
 
 Authors are ESRs in MLFPM project https://mlfpm.eu/
 
+
+
+# HospiNet
+Hospital Network Simulations in France
 
 
 ## Background
