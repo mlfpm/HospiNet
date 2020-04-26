@@ -1,9 +1,17 @@
+# @authors: semese
+
 import os
 import numpy as np
 import pandas as pd
 
-from src.classes import HospiGraph
+from scripts.classes import HospiGraph
 
+paths_dict = {
+        "graph_path": os.path.abspath(os.path.join("data", "processed_data", "connectivity.pkl")),
+        "dist_path": os.path.abspath(os.path.join("data", "processed_data", "distances_times.pkl")),
+        "attr_path": os.path.abspath(os.path.join("data", "processed_data", "departments.pkl")),
+        "time_series_path": os.path.abspath(os.path.join("data", "France_Hospital_data", "date_dep.csv")),
+    }
 
 def start_simulation(max_dist_dict, cap_thresh_dict):
     """
@@ -16,16 +24,13 @@ def start_simulation(max_dist_dict, cap_thresh_dict):
             network_state (dictionary) - the occupancy level by day for each department
     """
     # Initialise hparams
-    hparams = {
-        "graph_path": os.path.abspath(os.path.join("processed_data", "connectivity.pkl")),
-        "dist_path": os.path.abspath(os.path.join("processed_data", "distances_times.pkl")),
-        "attr_path": os.path.abspath(os.path.join("processed_data", "departments.pkl")),
+    hparams = {**paths_dict, **
+        {
         "init_n_patients": {"icu": 0, "acute": 0},
         "init_prev_count": {"icu": 0, "acute": 0},
         "max_distance": max_dist_dict,
         "capacity_thresh": cap_thresh_dict,
-        "time_series_path": os.path.abspath(os.path.join("France_Hospital_data", "date_dep.csv")),
-    }
+        }}
 
     # Initialise network
     G = HospiGraph(hparams)
