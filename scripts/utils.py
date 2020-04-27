@@ -3,6 +3,7 @@
 import os, pickle
 import numpy as np
 import pandas as pd
+import networkx as nx
 import plotly.express as px
 
 from scripts.classes import HospiGraph
@@ -13,6 +14,9 @@ paths_dict = {
     ),
     "fullgraph_path": os.path.abspath(
         os.path.join("data", "processed_data", "France_graph.pkl")
+    ),
+    "used_labs_path": os.path.abspath(
+        os.path.join("data", "raw_data", "used_dep_list.pkl")
     ),
     "dist_path": os.path.abspath(
         os.path.join("data", "processed_data", "distances_times.pkl")
@@ -29,73 +33,7 @@ paths_dict = {
 }
 
 
-def on_submit_call(max_dist_dict: dict, cap_thresh_dict: dict, simulation: bool):
-    """
-        Method called on Submit button press. It computes the simulation or just
-        the evolution of data over time based on the value of the ´simulation´
-        argument.
-        Args:
-            max_dist_dict (dictionary) - the maximum distances to transfer patients to
-            cap_thresh_dict (dictionary) - the capacity threshold for each department
-            simulation (bool) - flag for running the simulation
-        Returns:
-            time_df (DataFrame) - a dataframe containing the occupancy rate and
-                patient count over time for each department
-    """
-    if simulation:
-        time_df = set_up_simulation(max_dist_dict, cap_thresh_dict)
-    else:
-        time_df = occupancy_rate_over_time()
-    return time_df
-
-
-def occupancy_rate_over_time():
-    """
-        Method to compute the occupancy rate over time if the simulation is not
-        activated.
-        Returns:
-             output (DataFrame) - containing the daily stats for all the departments
-    """
-    # Read time series data
-    df = pd.read_csv(paths_dict["time_series_path"])
-
-    # Load distances and times
-    with open(paths_dict["bed_info_path"], "rb") as handle:
-        bed_info = pickle.load(handle)
-
-    # Set date to datetime type
-    df["jour"] = pd.to_datetime(df["jour"], format="%Y/%m/%d")
-    df["dep"] = df["dep"].str.zfill(2)
-
-    # Dictionary to store the results
-    output = {}
-
-    # For each time point
-    for date in df["jour"].sort_values().unique():
-        temp = {}
-        time_series_df = df[df["jour"] == date]
-        # For each department
-        for idx, row in time_series_df.iterrows():
-            # Get occupancy and patient count in that time step
-            temp[row.dep] = {
-                "n_patients": {"icu": row.rea, "acute": row.hosp - row.rea},
-                "occupancy%": {
-                    "total": (
-                        row.hosp
-                        / (bed_info[row.dep]["icu"] + bed_info[row.dep]["acute"])
-                    )
-                    * 100.0,
-                    "icu": (row.rea / bed_info[row.dep]["icu"]) * 100.0,
-                    "acute": ((row.hosp - row.rea) / bed_info[row.dep]["acute"])
-                    * 100.0,
-                },
-            }
-        output[np.datetime_as_string(date, unit="D")] = temp
-
-    return dict_to_df(output)
-
-
-def set_up_simulation(max_dist_dict, cap_thresh_dict):
+def on_submit_call(max_dist_dict, cap_thresh_dict, simulation):
     """
         Method to run a simulation with a given parameter setting.
         To be called from the event-handler of the interface.
@@ -109,10 +47,9 @@ def set_up_simulation(max_dist_dict, cap_thresh_dict):
     hparams = {
         **paths_dict,
         **{
-            "init_n_patients": {"icu": 0, "acute": 0},
-            "init_prev_count": {"icu": 0, "acute": 0},
             "max_distance": max_dist_dict,
             "capacity_thresh": cap_thresh_dict,
+            "france_graph": load_and_build_graph()
         },
     }
 
@@ -122,25 +59,6 @@ def set_up_simulation(max_dist_dict, cap_thresh_dict):
     # Read time series data
     df = pd.read_csv(hparams["time_series_path"])
 
-    # Run the simulation
-    network_state = run_simulation(df, G)
-
-    return network_state
-
-
-def run_simulation(df, G, return_counts=True):
-    """
-        Method to run simulation on a given data-set using a predefined network.
-        Args:
-            df (DataFrame) - pandas DataFrame having as columns:
-                ['jour', 'dep', 'hosp', 'rea', 'rad', 'dc']
-                (comes from /France_Hospital_data/date_dep.csv)
-            G (HospiGraph) - an initialised HospiGraph object
-            return_counts (bool) - flag to indicate whether to return
-                the patient counts too or only the occupancy percentages
-        Returns:
-            output (DataFrame) - the occupancy level by day for each department
-    """
     # Set date to datetime type
     df["jour"] = pd.to_datetime(df["jour"], format="%Y/%m/%d")
     df["dep"] = df["dep"].str.zfill(2)
@@ -152,12 +70,13 @@ def run_simulation(df, G, return_counts=True):
     for date in df["jour"].sort_values().unique():
         # 1. Update incoming patient for each node
         time_series_df = df[df["jour"] == date]
-        G.add_new_patients(time_series_df)
+        G.in_daily_patients_all_nodes(time_series_df)
 
         # 2. For each node perform propagation - nodes are ordered by their degrees
-        network_state = G.redistribute_patients(return_counts=return_counts)
+        if simulation:
+            G.redistribute_patients()
 
-        output[np.datetime_as_string(date, unit="D")] = network_state
+        output[np.datetime_as_string(date, unit="D")] = G.get_network_state()
 
     return dict_to_df(output)
 
@@ -181,6 +100,7 @@ def dict_to_df(output):
         "icu_patients": [],
         "acute_patients": [],
     }
+
     for Date, val in output.items():
         for node in val:
             result_dict["Date"].append(Date)
@@ -188,9 +108,12 @@ def dict_to_df(output):
             result_dict["total_occupancy"].append(val[node]["occupancy%"]["total"])
             result_dict["icu_occupancy"].append(val[node]["occupancy%"]["icu"])
             result_dict["acute_occupancy"].append(val[node]["occupancy%"]["acute"])
-            result_dict["total_patients"].append(val[node]["n_patients"]["icu"] + val[node]["n_patients"]["acute"])
+            result_dict["total_patients"].append(
+                val[node]["n_patients"]["icu"] + val[node]["n_patients"]["acute"]
+            )
             result_dict["icu_patients"].append(val[node]["n_patients"]["icu"])
             result_dict["acute_patients"].append(val[node]["n_patients"]["acute"])
+
     return pd.DataFrame(result_dict)
 
 
@@ -200,7 +123,7 @@ def animate_graph(time_df, animate: str, style="carto-positron"):
         time_df (DataFrame) - the output of the ´on_submit_call´ method
         animate (string) - the name of the variable to animate in the resulting plot.
             Should be one of ["total_occupancy","icu_occupancy","acute_occupancy",
-            "icu_patients","acute_patients"]
+            "total_patients", "icu_patients","acute_patients"]
         style (string, optional) - style that ploly should use to render the map.
 
             Should be one of ['open-street-map','white-bg','carto-positron',
@@ -291,3 +214,30 @@ def plot_occupancy_evolution(time_df, what_to_plot, department_label):
     df = time_df[time_df["dep"] == department_label]
     fig = px.line(df, x="Date", y=what_to_plot)
     return fig
+
+
+def load_and_build_graph():
+    """
+        Method to create a networkx graph object using the predefined nodes list.
+    """
+    # Load and build graph
+    with open(paths_dict["graph_path"], "rb") as handle:
+        france = pickle.load(handle)
+    france_graph = nx.Graph(france)
+
+    # Load distances and times
+    with open(paths_dict["dist_path"], "rb") as handle:
+        france_dist = pickle.load(handle)
+
+    # Set distances as edge attributes - they are transformed to kms!
+    nx.set_edge_attributes(
+        france_graph,
+        {
+            (u, val["code"]): val["distance"] / 1000
+            for u, value in france_dist.items()
+            for val in value
+        },
+        "distance",
+    )
+
+    return france_graph
