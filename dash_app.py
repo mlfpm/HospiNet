@@ -208,7 +208,7 @@ app.layout = html.Div(
                     className="eight columns div-for-charts bg-grey",
                     children=[
                         dcc.Tabs(id='tabs-selector', value='ng', children=[
-                            dcc.Tab(label='Network Graph', value='ng'),
+                            dcc.Tab(id="network-tab", label='Network Graph', value='ng'),
                             dcc.Tab(label='Department Details', value='occupancy'),
                         ]),
                         html.Div(id='graph_div', style={"height": "100%"}),
@@ -488,11 +488,12 @@ def toggle_collapse(n, is_open):
     new_text = "Show Help" if not new_val else "Hide Help"
     return is_open, new_text
 
-@server.route('/favicon.ico')
-def favicon():
-    return flask.send_from_directory(os.path.join(server.root_path, 'assets'),
-                                     'favicon.ico')
+# @server.route('/favicon.ico')
+# def favicon():
+#     return flask.send_from_directory(os.path.join(server.root_path, 'assets'),
+#                                      'favicon.ico')
 
+# app.scripts.append_script({"external_url": ['assets/scripts.js']})
 
 if __name__ == '__main__':
     app.run_server(debug=True)
