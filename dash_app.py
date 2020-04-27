@@ -155,7 +155,7 @@ app.layout = html.Div(
                                         {"label": "Acute Patients",
                                             "value": "acute_patients"},
                                         ],
-                                    value='total_occupancy',
+                                    value='total_patients',
                                     clearable=False
                                 )
                             ],
@@ -449,16 +449,15 @@ def toggle_form(checkbox_value):
 
 @app.callback([Output('graph_div', 'children'), Output('occupancy_div', 'children')],
               [Input('submit-val', 'n_clicks'),
-               Input('checkbox', 'value'),
                Input('animate-dropdown', 'value'),
                Input('department-dropdown', 'value')],
-              [              
+              [State('checkbox', 'value'),
                State('capacity_acute_threshold', 'value'),
                State('capacity_icu_threshold', 'value'),
                State('distance_acute_threshold', 'value'),
                State('distance_icu_threshold', 'value')]
                )
-def simulate(clicks, propagation_bool, animate_value, department_code, capacity_acute, capacity_icu, distance_acute, distance_icu,):
+def simulate(clicks, animate_value, department_code, propagation_bool, capacity_acute, capacity_icu, distance_acute, distance_icu,):
     #[{'prop_id': 'submit-val.n_clicks', 'value': 1}]
     # triggered:[{'prop_id': 'checkbox.value', 'value': [...]}]
     global time_df
