@@ -25,6 +25,8 @@ from dash.dependencies import Output, Input, State
 from scripts.utils import animate_graph, plot_occupancy_evolution, on_submit_call
 
 time_df = pd.DataFrame()
+realdata_time_df = pd.DataFrame()
+simulated_time_df = pd.DataFrame()
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "HospiNet"
