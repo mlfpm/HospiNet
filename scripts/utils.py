@@ -215,7 +215,7 @@ def plot_occupancy_evolution(time_df_no_prop, time_df_prop, what_to_plot, depart
     df1 = time_df_no_prop[time_df_no_prop["dep"] == department_label]
     df2 = time_df_prop[time_df_no_prop["dep"] == department_label]
     df = pd.DataFrame({
-        "Date" : df1["Date"].to_list()*2,
+        "Date" : df1["Date"].to_list() + df2["Date"].to_list(),
         "Simulation": ["w/o propagation"]*len(df1) + ["w/ propagation"]*len(df2),
         what_to_plot: df1[what_to_plot].to_list() + df2[what_to_plot].to_list()
     })

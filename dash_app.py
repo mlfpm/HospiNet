@@ -25,8 +25,8 @@ from dash.dependencies import Output, Input, State
 from scripts.utils import animate_graph, plot_occupancy_evolution, on_submit_call
 
 time_df = pd.DataFrame()
-realdata_time_df = pd.DataFrame()
-simulated_time_df = pd.DataFrame()
+time_df_no_prop = pd.DataFrame()
+time_df_prop = pd.DataFrame()
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "HospiNet"
@@ -444,12 +444,22 @@ def toggle_form(checkbox_value):
                )
 def simulate(clicks, animate_value, department_code, propagation_bool, capacity_acute, capacity_icu, distance_acute, distance_icu,):
     global time_df
+    global time_df_prop
+    global time_df_no_prop
+
     max_dist_dict = {"icu": distance_icu, "acute": distance_acute}
     cap_thresh_dict = {"icu": float(capacity_icu)/100, "acute": float(capacity_acute)/100}
     if dash.callback_context.triggered[0]["prop_id"] in ['checkbox.value','submit-val.n_clicks','.']:
         time_df = on_submit_call(max_dist_dict, cap_thresh_dict, propagation_bool)
+        if propagation_bool: 
+            time_df_prop = time_df.copy()
+        else:
+            time_df_no_prop = time_df.copy()
+            if len(time_df_prop) < 1:
+                time_df_prop = pd.DataFrame(columns=time_df_no_prop.columns)
+
     network_figure = animate_graph(time_df, animate_value, style="carto-positron")
-    occupancy_figure = plot_occupancy_evolution(time_df, animate_value, str(department_code))
+    occupancy_figure = plot_occupancy_evolution(time_df_no_prop, time_df_prop, animate_value, str(department_code))
     return dcc.Graph(figure=network_figure, style={"width": "100%", "height":"100%"}), dcc.Graph(figure=occupancy_figure, style={"width": "100%", "height":"100%"})
 
 
