@@ -134,3 +134,4 @@ dmypy.json
 .pyre/
 
 # Files and folders
+test.py

@@ -199,10 +199,11 @@ def animate_graph(time_df, animate: str, style="carto-positron"):
     return fig
 
 
-def plot_occupancy_evolution(time_df, what_to_plot, department_label):
+def plot_occupancy_evolution(time_df_no_prop, time_df_prop, what_to_plot, department_label):
     """
     Method to plot the evolution of a given parameter for a given department.
-        time_df (DataFrame) - the output of the ´on_submit_call´ method
+        time_df_no_prop (DataFrame) - the output of the ´on_submit_call´ method when simulation=False
+        time_df_prop (DataFrame) - the output of the ´on_submit_call´ method when simulation=True
         what_to_plot (string) - the name of the variable to show in the resulting plot.
             Should be one of ["total_occupancy","icu_occupancy","acute_occupancy",
             "icu_patients","acute_patients"]
@@ -211,8 +212,14 @@ def plot_occupancy_evolution(time_df, what_to_plot, department_label):
     Returns:
         fig (plotly figure) - the graph
     """
-    df = time_df[time_df["dep"] == department_label]
-    fig = px.line(df, x="Date", y=what_to_plot)
+    df1 = time_df_no_prop[time_df_no_prop["dep"] == department_label]
+    df2 = time_df_prop[time_df_no_prop["dep"] == department_label]
+    df = pd.DataFrame({
+        "Date" : df1["Date"].to_list()*2,
+        "Simulation": ["w/o propagation"]*len(df1) + ["w/ propagation"]*len(df2),
+        what_to_plot: df1[what_to_plot].to_list() + df2[what_to_plot].to_list()
+    })
+    fig = px.line(df, x="Date", y=what_to_plot, color='Simulation')
     return fig
 
 
