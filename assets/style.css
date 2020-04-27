@@ -432,7 +432,7 @@ a {
 .div-for-charts{
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 98.5vh; /*100vh;*/
   width: 100%;
 }
 #histogram {
@@ -656,7 +656,17 @@ input[type="number"] {
   height: 45px;
 }
 
+#more-info {
+  padding-top: 3rem !important;
+}
 
+#container-row {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 
 .tab{
   background-color: #454545 !important;
@@ -674,8 +684,9 @@ input[type="number"] {
 
 .btn {
   margin-left: 10px;
-  margin-bottom: 3rem !important;
 }
+
+
 /* LOADING DIV*/
 @keyframes fadein {
   0% {

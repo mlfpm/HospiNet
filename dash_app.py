@@ -32,7 +32,7 @@ server = app.server
 
 app.layout = html.Div(
     children=[
-        html.Div(
+        html.Div(id="container-row",
             className="row",
             children=[
                 # Column for user controls
@@ -91,30 +91,13 @@ app.layout = html.Div(
                                 ),
                             ]
                         ),
-                        # html.P(
-                        #     """
-                        #     The 'Simulate' button allows you to 
-                        #     display the behaviour of the network with the selected parameters. 
-                        #     """
-                        # ),
-                        # html.P(
-                        #     """
-                        #     The checkbox below selects whether the simulation allows the transfer of patients between hospitals. If it is active,
-                        #     the user needs to select the threshold values of capacity for Acute and ICU patients beyond which a hospital will try to transfer
-                        #     some of the load to other hospitals. The Max Distance threshold selects how far a patient can travel in a transfer between hospitals. 
-                        #     """
-                        # ),
-                        # html.P(
-                        #     """
-                        #     The tabs at the top of the graphs allow you to switch between the global network graph animation and the visualization
-                        #     of the evolution for a specific department. 
-                        #     """
-                        # ),
+                        
                         html.P(
                             """
                             For more info refer to:
-                            """
+                            """, id="more-info"                            
                         ),
+
                         html.Ul(children=[
                             html.Li(children=[html.A(children=["The Devpost Submission"], href='https://devpost.com/software/hospinet', target="_blank"),]),
                             html.Li(children=[html.A(children=["Our Github Repo"], href='https://github.com/mlfpm/HospiNet', target="_blank"),]),
@@ -155,7 +138,7 @@ app.layout = html.Div(
                                         {"label": "Acute Patients",
                                             "value": "acute_patients"},
                                         ],
-                                    value='total_occupancy',
+                                    value='total_patients',
                                     clearable=False
                                 )
                             ],
@@ -449,18 +432,15 @@ def toggle_form(checkbox_value):
 
 @app.callback([Output('graph_div', 'children'), Output('occupancy_div', 'children')],
               [Input('submit-val', 'n_clicks'),
-               Input('checkbox', 'value'),
                Input('animate-dropdown', 'value'),
                Input('department-dropdown', 'value')],
-              [              
+              [State('checkbox', 'value'),
                State('capacity_acute_threshold', 'value'),
                State('capacity_icu_threshold', 'value'),
                State('distance_acute_threshold', 'value'),
                State('distance_icu_threshold', 'value')]
                )
-def simulate(clicks, propagation_bool, animate_value, department_code, capacity_acute, capacity_icu, distance_acute, distance_icu,):
-    #[{'prop_id': 'submit-val.n_clicks', 'value': 1}]
-    # triggered:[{'prop_id': 'checkbox.value', 'value': [...]}]
+def simulate(clicks, animate_value, department_code, propagation_bool, capacity_acute, capacity_icu, distance_acute, distance_icu,):
     global time_df
     max_dist_dict = {"icu": distance_icu, "acute": distance_acute}
     cap_thresh_dict = {"icu": float(capacity_icu)/100, "acute": float(capacity_acute)/100}
@@ -469,15 +449,6 @@ def simulate(clicks, propagation_bool, animate_value, department_code, capacity_
     network_figure = animate_graph(time_df, animate_value, style="carto-positron")
     occupancy_figure = plot_occupancy_evolution(time_df, animate_value, str(department_code))
     return dcc.Graph(figure=network_figure, style={"width": "100%", "height":"100%"}), dcc.Graph(figure=occupancy_figure, style={"width": "100%", "height":"100%"})
-
-
-# @app.callback([Output('occupancy_div', 'children')],
-#               [Input('department-dropdown', 'value')],
-#               [State('animate-dropdown', 'value')])
-# def change_department(department_code, animate_value):
-#     global time_df
-#     occupancy_figure = plot_occupancy_evolution(time_df, animate_value, str(department_code))
-#     return dcc.Graph(figure=occupancy_figure, style={"width": "100%"})
 
 
 
