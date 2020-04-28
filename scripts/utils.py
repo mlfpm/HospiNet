@@ -57,7 +57,7 @@ def on_submit_call(max_dist_dict, cap_thresh_dict, simulation):
     G = HospiGraph(hparams)
 
     # Read time series data
-    df = pd.read_csv(hparams["time_series_path"])
+    df = pd.read_csv(hparams["time_series_path"], dtype={'dep':'str'})
 
     # Set date to datetime type
     df["jour"] = pd.to_datetime(df["jour"], format="%Y/%m/%d")
