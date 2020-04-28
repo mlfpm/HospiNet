@@ -1531,12 +1531,6 @@ graph [
   ]
   edge [
     source 21
-    target 57
-    distance 609803
-    time 20429
-  ]
-  edge [
-    source 21
     target 22
     distance 122112
     time 5297
@@ -2290,12 +2284,6 @@ graph [
     target 76
     distance 99779
     time 6281
-  ]
-  edge [
-    source 71
-    target 93
-    distance 651337
-    time 22510
   ]
   edge [
     source 71
